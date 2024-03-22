@@ -21,6 +21,9 @@ Welcome to our website development project! Below are the instructions to get st
    - Navigate to File > Open and select the project directory.
    - Make your edits to the files as needed.
    - Save the changes.
+  
+5. **Accessing the Server**: You will need the "Kendall-Kam-WebServer2024.pem" file to connect to the server at any point. Make sure you have this file available.
+
 
 ## Making Changes
 
