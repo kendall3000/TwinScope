@@ -1,0 +1,222 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* -------------------- Navbar Styles -------------------- */
+/* Navbar Container */
+.navbar {
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Logo */
+#navbar-logo {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-item {
+    height: 80px;
+}
+
+.navbar-links {
+    color: #fff;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+
+.navbar-links:hover {
+    color: #48BCF2;
+}
+
+/* Mobile Menu Toggle */
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Rotate bars individually */
+.navbar-toggle.is-active .bar:nth-child(1) {
+    transform: rotate(180deg);
+}
+
+.navbar-toggle.is-active .bar:nth-child(2) {
+    transform: rotate(180deg);
+}
+
+.navbar-toggle.is-active .bar:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        background-color: #333;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .navbar-menu.active {
+        left: 0;
+        max-height: 500px;
+    }
+
+    .navbar-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-links {
+        padding: 20px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    /* Dropdown Menu Animation */
+    .navbar-menu {
+        max-height: 0;
+        transition: max-height 0.9s ease-out;
+    }
+
+    .navbar-menu.active {
+        max-height: 100vh; /* Ensure the menu expands fully */
+        transition: max-height 0.5s ease-in;
+    }
+}
+
+/* -------------------- General Styles -------------------- */
+/* Overall Background and Font */
+body.about-me-background {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Content Styling */
+.about_content-continued {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.continued.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.continued-intro strong {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.aboutMe-p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.aboutMe-p strong {
+    color: #e67e22;
+}
+
+.aboutMe-p:first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.aboutMe-p:nth-child(even) {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about_content-continued {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .aboutMe-p {
+        font-size: 16px;
+    }
+
+    .continued-intro strong {
+        font-size: 24px;
+    }
+}

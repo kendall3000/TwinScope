@@ -1,0 +1,214 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+#navbar-logo {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-item {
+    height: 80px;
+}
+
+.navbar-links {
+    color: #fff;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+
+.navbar-links:hover {
+    color: #48BCF2;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Rotate bars individually */
+.navbar-toggle.is-active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.is-active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        background-color: #333;
+        transition: left 0.3s ease;
+        overflow: hidden;
+    }
+
+    .navbar-menu.active {
+        left: 0;
+    }
+
+    .navbar-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-links {
+        padding: 20px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    /* Dropdown Menu Animation */
+    .navbar-menu {
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .navbar-menu.active {
+        max-height: 100vh; /* Ensure the menu expands fully */
+        transition: max-height 0.5s ease-in;
+    }
+}
+/* Intro Section Styles */
+.intro-section {
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color:white;
+}
+
+.intro-text {
+    position: relative;
+    z-index: 1;
+}
+
+.intro-title {
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, #2ecc71, #3498db); /* Gradient from green to blue */
+    -webkit-background-clip: text; /* Applies gradient to text */
+    -webkit-text-fill-color: transparent; /* Hides the text color to reveal gradient */
+}
+
+/* Magnifying Glass */
+.magnifying-glass {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #333; /* Black ring */
+    border-radius: 50%;
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the magnifying glass */
+    pointer-events: none; /* Ensures it doesn’t block other elements */
+    z-index: 2;
+}
+
+/* Inner shadow for the magnifying glass */
+.magnifying-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4); /* Slightly opaque background */
+    transition: transform 1s ease; /* Smooth transition for the glass effect */
+}
+
+/* Animation to move the glass */
+@keyframes moveGlass {
+    0% {
+        transform: translate(-50%, -50%) translateX(-200px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(200px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(-200px);
+    }
+}
+
+/* Applying the animation */
+.magnifying-glass::before {
+    animation: moveGlass 10s linear infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 2.5rem;
+    }
+
+    .magnifying-glass {
+        width: 100px;
+        height: 100px;
+    }
+}
