@@ -41,10 +41,12 @@
     display: flex;
     list-style: none;
     text-align: center;
+    position: relative; /* Needed for tooltip positioning */
 }
 
 .navbar-item {
     height: 80px;
+    position: relative; /* Needed for tooltip positioning */
 }
 
 .navbar-links {
@@ -57,14 +59,39 @@
     transition: color 0.3s ease;
 }
 
-.navbar-links:hover {
+.navbar-links:hover,
+.navbar-links.active {
     color: #48BCF2;
+}
+
+/* Tooltip for hover description */
+.navbar-item .tooltip {
+    content: attr(data-description);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(54, 54, 54, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    visibility: hidden;
+}
+
+.navbar-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Mobile Menu Toggle */
 .navbar-toggle {
     display: none;
     cursor: pointer;
+    position: relative;
 }
 
 .bar {
@@ -76,17 +103,17 @@
     transition: all 0.3s ease;
 }
 
-/* Rotate bars individually */
+/* Rotate bars individually for symmetrical X */
 .navbar-toggle.is-active .bar:nth-child(1) {
-    transform: rotate(180deg);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .navbar-toggle.is-active .bar:nth-child(2) {
-    transform: rotate(180deg);
+    opacity: 0;
 }
 
 .navbar-toggle.is-active .bar:nth-child(3) {
-    transform: rotate(180deg);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Responsive Design */
