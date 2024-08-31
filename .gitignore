@@ -1,0 +1,9 @@
+# Ignore the "practice css" folder
+practice css/
+
+# Ignore specific files
+index.nginx-debian.html
+test.html
+
+# Ignore macOS system files
+.DS_Store
