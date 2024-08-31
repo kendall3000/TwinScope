@@ -1,0 +1,66 @@
+body.resume-background {
+    background-color: #022136; 
+    font-family: Arial, sans-serif;
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #333;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.section-content, .experience p, .projects-list li, .skills-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.experience-list, .projects-list, .skills-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-list li, .projects-list li, .skills-list li {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50; /* Dark Blue Grey */
+    color: #ffffff; /* White */
+    margin-top: 50px;
+}
+
+footer a {
+    color: #2ecc71; /* Accent Green */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

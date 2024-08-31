@@ -61,7 +61,7 @@
 
 .navbar-links:hover,
 .navbar-links.active {
-    color: #2ecc71; /* Accent Green */
+    color: #3498db; /* Accent Green */
 }
 
 /* Tooltip for hover description */
@@ -164,9 +164,9 @@
 /* -------------------- General Styles -------------------- */
 /* Overall Background and Font */
 body.about-me-background {
-    background-color: #022136; /* Light Grey */
+    background-color: #000000; /* Light Grey */
     font-family: Arial, sans-serif;
-    color: #333; /* Dark Grey */
+    color: #e9e9e9; /* Dark Grey */
     margin: 0;
     padding: 0;
 }
@@ -175,10 +175,10 @@ body.about-me-background {
 .about_content-continued {
     max-width: 800px;
     margin: 50px auto;
-    background-color: #ffffff; /* White */
+    background-color: #3498db; /* White */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .continued.header {
@@ -188,7 +188,7 @@ body.about-me-background {
 
 .continued-intro strong {
     font-size: 28px;
-    color: #022136; /* Accent Blue */
+    color: #2ecc71; /* Accent Blue */
 }
 
 .aboutMe-p {
@@ -199,21 +199,17 @@ body.about-me-background {
 }
 
 .aboutMe-p strong {
-    color: #022136; /* Orange */
+    color: #66b1e3; /* Orange */
 }
 
 .aboutMe-p:first-letter {
-    /* font-size: 24px;
-    font-weight: bold; */
-    color: #333; ; /* Accent green */
+    font-size: 24px;
+    font-weight: bold;
+    color: #2ecc71 ; /* Accent green */
 }
 
 .aboutMe-p:nth-child(even) {
-    background-color: #f9f9f9; /* Light Grey */
-    padding: 15px;
-    border-radius: 5px;
-}
-.aboutMe-p:nth-child(odd) {
+    background-color: #025790; /* Light Grey */
     padding: 15px;
     border-radius: 5px;
 }

@@ -164,7 +164,7 @@
 /* -------------------- General Styles -------------------- */
 /* Overall Background and Font */
 body.about-me-background {
-    background-color: #022136; /* Light Grey */
+    background-color: #f4f4f4; /* Light Grey */
     font-family: Arial, sans-serif;
     color: #333; /* Dark Grey */
     margin: 0;
@@ -188,7 +188,7 @@ body.about-me-background {
 
 .continued-intro strong {
     font-size: 28px;
-    color: #022136; /* Accent Blue */
+    color: #3498db; /* Accent Blue */
 }
 
 .aboutMe-p {
@@ -199,21 +199,17 @@ body.about-me-background {
 }
 
 .aboutMe-p strong {
-    color: #022136; /* Orange */
+    color: #e67e22; /* Orange */
 }
 
 .aboutMe-p:first-letter {
-    /* font-size: 24px;
-    font-weight: bold; */
-    color: #333; ; /* Accent green */
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db; /* Accent Blue */
 }
 
 .aboutMe-p:nth-child(even) {
     background-color: #f9f9f9; /* Light Grey */
-    padding: 15px;
-    border-radius: 5px;
-}
-.aboutMe-p:nth-child(odd) {
     padding: 15px;
     border-radius: 5px;
 }
