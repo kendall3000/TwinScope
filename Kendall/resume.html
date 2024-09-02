@@ -6,14 +6,14 @@
     <title>Kendall Ramos | Resume</title>
     <link rel="stylesheet" href="../assets/css/basic-styles.css"> 
     <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
-    <link rel="stylesheet" href="assets/css/resume-style.css"> <!-- Custom styles for the resume page -->
+    <link rel="stylesheet" href="assets/css/resume-style.css">
 </head>
 <body class="resume-background">
     <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="navbar-container">
-                <a href="/" id="navbar-logo">Kendall Ramos</a>
+                <a href="index.html" id="navbar-logo">Kendall Ramos</a>
                 <div class="navbar-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -29,8 +29,7 @@
                         <span class="tooltip">Learn more about my journey and background</span>
                     </li>
                     <li class="navbar-item" data-description="View my resume and qualifications">
-                        <!-- <a href="assets/files/tech-resume.pdf" class="navbar-links" target="_blank">Resume</a> -->
-						<a href="resume.html" class="navbar-links">Resume</a>
+                        <a href="resume.html" class="navbar-links">Resume</a>
                         <span class="tooltip">View my resume and qualifications</span>
                     </li>
                     <li class="navbar-item" data-description="Explore my portfolio of projects">
@@ -52,45 +51,98 @@
 
     <!-- Resume Content -->
     <div class="resume-container">
-        <h1>Kendall Ramos</h1>
+        <h1 class="my-name">Kendall Ramos</h1>
+        <!-- <div class="my-name"><strong>Kendall Ramos</strong></div> -->
         <p class="contact-info">San Antonio, TX | <a href="mailto:kendallramos03@gmail.com">kendallramos03@gmail.com</a> | <a href="https://www.linkedin.com/in/kendall-ramos/" target="_blank">LinkedIn</a></p>
 
         <h2 class="section-title">Summary of Qualifications</h2>
-        <p class="section-content">Software engineer passionate about creating impactful solutions through programming, design, and development. Proficient in multiple programming languages and development tools. Skilled at problem-solving and collaborating in fast-paced environments.</p>
+        <p class="section-content">A dedicated and proactive software engineer with a strong foundation in software development, problem-solving, and collaborative teamwork. Adept in various programming languages, frameworks, and tools, with experience in creating innovative solutions and efficient applications. Passionate about technology, continuous learning, and leveraging skills to contribute to meaningful projects.</p>
 
         <h2 class="section-title">Education</h2>
-        <p class="section-content"><strong>University of Texas at San Antonio</strong><br>Bachelor of Science in Computer Science, Minor in Business Administration<br>Graduated May 2024 | GPA: 3.71</p>
+        <p class="section-content">
+            <strong>University of Texas at San Antonio</strong><br>
+            Bachelor of Science in Computer Science, Minor in Business Administration<br>
+            Graduated: May 2024 | Overall GPA: 3.71
+        </p>
 
         <h2 class="section-title">Experience</h2>
         <div class="experience">
-            <p><strong>AppleCare Technical Advisor</strong> &ndash; Apple Inc.<br>FEB 2023 &ndash; PRESENT | San Antonio, TX</p>
+            <p><strong>AppleCare Technical Advisor</strong> &ndash; Apple Inc.<br>Feb 2023 &ndash; Present | San Antonio, TX</p>
             <ul class="experience-list">
-                <li>Delivered top-tier technical support for Apple products, resolving 95% of customer issues promptly.</li>
-                <li>Conducted monthly data analysis with the team to improve performance.</li>
-                <li>Applied advanced troubleshooting skills across Apple devices for effective problem resolution.</li>
+                <li>Provided exceptional technical support for Apple products, achieving a 95% issue resolution rate.</li>
+                <li>Collaborated with a team to perform data analysis and develop strategies that enhanced customer satisfaction and reduced average handling time.</li>
+                <li>Utilized strong problem-solving skills to manage complex technical cases, demonstrating expertise across Apple hardware and software platforms.</li>
+                <li>Demonstrated adaptability and organization in a fast-paced, dynamic environment to maintain high customer service standards.</li>
             </ul>
         </div>
 
         <h2 class="section-title">Projects</h2>
-        <ul class="projects-list">
-            <li><strong>Bed Bug Website</strong> &ndash; Built a website to show U.S. hotels with bedbug incidents using ReactJS and Firebase. Implemented Firestore for user authentication and data operations. Utilized NodeJS and Google Cloud functions for automated tasks.</li>
-            <li><strong>Sinking Flag Game</strong> &ndash; Developed a game in Unity with C#, focusing on game design, asset integration, and UI development. Managed gameplay mechanics and version control using GitHub.</li>
-            <li><strong>Rasa-Chatbot</strong> &ndash; Created an advanced chatbot using Python, integrated natural language processing, and SQL for backend development.</li>
-            <li><strong>eBOOKFAIR Website</strong> &ndash; Created an e-commerce platform using Django and MySQL, designed a responsive UI with Bootstrap for digital book sales.</li>
-            <li><strong>Meal Prep App</strong> &ndash; Developed an app to calculate BMI and provide personalized meal plans using Java and API integration.</li>
-        </ul>
+        <div class="projects">
+            <div class="project">
+                <h3><a href="bedbug.html">Bed Bug Website</a></h3>
+                <p><em>Completed: July 2023 | Personal Project</em></p>
+                <p>ReactJS | Firebase | Firestore | User Authentication | Data Operations | NodeJS | Google Cloud Functions</p>
+                <ul class="project-details">
+                    <li>Developed a website to identify U.S. hotels with bedbug incidents, utilizing ReactJS for the frontend and Firebase for backend services.</li>
+                    <li>Implemented Firestore for secure user authentication and efficient data handling, improving user engagement and satisfaction.</li>
+                    <li>Leveraged NodeJS and Google Cloud Functions to automate serverless tasks, enhancing website scalability and performance.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3><a href="sinking-flag.html">Sinking Flag Game</a></h3>
+                <p><em>Completed: Spring 2024 | Game Development Class</em></p>
+                <p>Game Design | Asset Integration | Optimization Patterns | Gameplay Mechanics Management | User Interface Development | Version Control (GitHub) | C# | Unity</p>
+                <ul class="project-details">
+                    <li>Created an engaging game in Unity, utilizing C# to develop gameplay mechanics and optimize performance for a smooth user experience.</li>
+                    <li>Managed game assets, UI components, and version control using GitHub, ensuring consistency and collaboration throughout the development process.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3><a href="rasa-chatbot.html">Rasa-Chatbot</a></h3>
+                <p><em>Completed: Fall 2023 | Artificial Intelligence Class</em></p>
+                <p>Python | Integration of AI Tools | Git | Natural Language Processing | SQL | Back-End Development</p>
+                <ul class="project-details">
+                    <li>Engineered an advanced chatbot using Python and Rasa, integrating AI tools to enhance natural language understanding.</li>
+                    <li>Developed backend infrastructure using SQL to support data retrieval and user interaction.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3><a href="eBookfair.html">eBOOKFAIR Website</a></h3>
+                <p><em>Completed: Fall 2023 | Software Engineering Class</em></p>
+                <p>Python | MySQL Database Admin | Git | UI Design | SQL | Back-End Development | Django | Bootstrap</p>
+                <ul class="project-details">
+                    <li>Developed an e-commerce platform for digital book sales using Django and MySQL, providing a scalable solution for online transactions.</li>
+                    <li>Designed and implemented a responsive user interface with Bootstrap, enhancing the platform's usability and visual appeal.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3><a href="meal-prep.html">Meal Prep App</a></h3>
+                <p><em>Completed: Spring 2023 | Application Programming Class</em></p>
+                <p>Java | User Input Processing | BMI Calculation | Algorithm Development | API Integration | User Interface Design | Data Management</p>
+                <ul class="project-details">
+                    <li>Developed an Android app to calculate BMI and provide personalized meal plans, utilizing Java for robust application logic.</li>
+                    <li>Integrated external APIs to expand meal plan options and provide real-time data updates.</li>
+                </ul>
+            </div>
+        </div>
 
         <h2 class="section-title">Skills</h2>
         <ul class="skills-list">
             <li><strong>Programming Languages:</strong> Java, JavaScript, C/C++, Python</li>
             <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Firebase, NodeJS, SQL</li>
-            <li><strong>Tools:</strong> Git, IntelliJ, Visual Studio Code</li>
+            <li><strong>Tools and Technologies:</strong> Git, IntelliJ, Visual Studio Code, Django, Google Cloud</li>
+            <li><strong>Software Development:</strong> Algorithm Development, Data Structures, Object-Oriented Programming, Software Testing, Debugging</li>
+            <li><strong>Database Management:</strong> MySQL, SQL, Data Modeling, Performance Tuning</li>
         </ul>
+
+        <h2 class="section-title"><a href="coursework.html">Coursework Repository</a></h2>
+        <p class="section-content">A comprehensive collection of academic projects and assignments demonstrating proficiency in programming, database management, operating systems, machine learning algorithms, and more. Each folder details challenges addressed and skills acquired through rigorous study and practical application.</p>
     </div>
 
     <footer>
         <p>Contact me at: <a href="mailto:kendallramos03@gmail.com">kendallramos03@gmail.com</a></p>
     </footer>
     <script src="../Kendall/assets/js/main.js"></script>
+    <script src="../Kendall/assets/js/kendall.js"></script>
 </body>
 </html>
