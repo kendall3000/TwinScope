@@ -254,8 +254,8 @@ footer a:hover {
 
 .contact-button {
     display: inline-block;
-    padding: 5px 15px;
-    font-size: 1rem;
+    padding: 5px 10px;
+    font-size: .9rem;
     color: #ffffff; /* White text */
     background-color: #3498db; /* Accent Blue */
     text-decoration: none;
@@ -265,6 +265,8 @@ footer a:hover {
 }
 
 .contact-button:hover {
-    background-color: #2ecc71; /* Accent Green */
-    border-color: #2ecc71; /* Accent Green */
+    /* background-color: #2ecc71; Accent Green */
+    background-color: #23b05e;
+    /* border-color: #2ecc71; Accent Green */
+    border-color: #23b05e;
 }

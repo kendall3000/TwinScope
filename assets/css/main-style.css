@@ -146,7 +146,7 @@
 }
 
 .intro-title {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
     position: relative;
     display: inline-block;
@@ -163,8 +163,8 @@
     border: 5px solid #333; /* Black ring */
     border-radius: 50%;
     box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.5);
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 55%;
     transform: translate(-50%, -50%); /* Center the magnifying glass */
     pointer-events: none; /* Ensures it doesn’t block other elements */
     z-index: 2;
@@ -204,7 +204,7 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .intro-title {
-        font-size: 2.5rem;
+        font-size: 3.0rem;
     }
 
     .magnifying-glass {
