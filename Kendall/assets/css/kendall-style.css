@@ -251,3 +251,20 @@ footer a:hover {
         font-size: 24px;
     }
 }
+
+.contact-button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: #ffffff; /* White text */
+    background-color: #3498db; /* Accent Blue */
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #3498db; /* Accent Blue */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #2ecc71; /* Accent Green */
+    border-color: #2ecc71; /* Accent Green */
+}

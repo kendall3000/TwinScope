@@ -1,3 +1,4 @@
+/* Base Styles */
 body.resume-background {
     background-color: #022136; /* Dark Blue Background */
     font-family: Arial, sans-serif;
@@ -9,11 +10,12 @@ body.resume-background {
 .resume-container {
     max-width: 900px;
     margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.95); /* Slightly Transparent White Background */
+    background-color: rgba(255, 255, 255, 0.95); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 h1.my-name {
     color: #333; /* Dark Grey */
@@ -25,31 +27,34 @@ h1.my-name {
 .section-title {
     color: #333; /* Dark Grey */
     font-size: 1.5rem;
-    /* border-bottom: 2px solid #3498db; Blue Border */
     padding-bottom: 5px;
     margin-top: 30px; /* Space Before Title */
 }
 
 .section-content,
+.coursework-content,
 .experience p,
 .project-details li,
-.skills-list li,
+.skills--list li,
 .contact-info {
     font-size: 1rem;
     line-height: 1.6;
     color: #333; /* Dark Grey Text */
 }
-
+.coursework-content{
+    padding-bottom: 10px;
+}
 .experience-list,
 .project-details,
-.skills-list {
+.skills-list,
+.skills--list {
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
 .experience-list li,
 .project-details li,
-.skills-list li {
+.skills--list li {
     margin-bottom: 10px;
 }
 
@@ -103,7 +108,40 @@ footer a:hover {
     opacity: 1;
 }
 
-/* Responsive styles */
+/* Project image styling */
+.project-icon {
+    width: 13px; /* Adjust to desired size */
+    height: 13px; /* Maintain aspect ratio */
+    object-fit: cover; /* Crops the image to fit the container */
+    vertical-align: middle; /* Aligns with text */
+    margin-left: 3px; /* Space between text and image */
+    margin-bottom: 5px; /* Adjust if necessary to align vertically */
+}
+
+/* Coursework styling */
+.coursework-container {
+    padding: 10px 0; /* Adjusts padding to align with other titles */
+    margin-bottom: 20px;
+}
+
+.skills-lists {
+    display: flex;
+    gap: 10px; /* Adds space between columns */
+    width: 100%;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    margin: 0; /* Resets margin to keep alignment */
+}
+
+.skills-list {
+    width: 45%; /* Sets width for each column */
+    list-style-type: disc;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 8px; /* Adds space between list items */
+}
+
 @media (max-width: 768px) {
     .resume-container {
         padding: 20px;
@@ -125,5 +163,19 @@ footer a:hover {
     .contact-info {
         font-size: 0.9rem; /* Slightly Smaller Text Size for Smaller Screens */
     }
-}
 
+    .skills-lists {
+        display: block;
+        gap: 0; /* Removes gap between stacked columns */
+    }
+
+    .skills-list {
+        width: 100%; /* Full width on smaller screens */
+        padding-left: 20px; /* Ensures alignment with the content */
+        margin-bottom: 10px; /* Space between columns when stacked */
+    }
+
+    .skills-list:last-child {
+        margin-bottom: 0; /* Removes margin from the last column */
+    }
+}
