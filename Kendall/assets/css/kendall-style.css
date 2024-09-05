@@ -270,3 +270,30 @@ footer a:hover {
     /* border-color: #2ecc71; Accent Green */
     border-color: #23b05e;
 }
+
+/* Text flip animation for about me */
+.flips {
+    position: relative;
+    display: inline-block;
+}
+
+.flips span {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: -3px; /* Adjust spacing between letters */
+    animation: flip 5s infinite; /* Longer duration for spinning */
+    animation-delay: calc(.3s * var(--i));
+}
+
+@keyframes flip {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(360deg); /* Rotate in the opposite direction */
+    }
+}

@@ -115,17 +115,6 @@
     .navbar-toggle {
         display: block;
     }
-
-    /* Dropdown Menu Animation */
-    .navbar-menu {
-        max-height: 0;
-        transition: max-height 0.5s ease-out;
-    }
-
-    .navbar-menu.active {
-        max-height: 100vh; /* Ensure the menu expands fully */
-        transition: max-height 0.5s ease-in;
-    }
 }
 /* Intro Section Styles */
 .intro-section {
@@ -137,78 +126,69 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    color:white;
+    color: white;
 }
 
 .intro-text {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+
+/* Main Title */
 .intro-title {
     font-size: 6rem;
     font-weight: bold;
     position: relative;
+    background: linear-gradient(to right, #2ecc71, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
     display: inline-block;
-    background: linear-gradient(to right, #2ecc71, #3498db); /* Gradient from green to blue */
-    -webkit-background-clip: text; /* Applies gradient to text */
-    -webkit-text-fill-color: transparent; /* Hides the text color to reveal gradient */
+    white-space: nowrap;
+    margin-bottom: 0.2em; /* Adds space below the title */
 }
 
-/* Magnifying Glass */
-.magnifying-glass {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 5px solid #333; /* Black ring */
-    border-radius: 50%;
-    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.5);
-    top: 60%;
-    left: 55%;
-    transform: translate(-50%, -50%); /* Center the magnifying glass */
-    pointer-events: none; /* Ensures it doesn’t block other elements */
-    z-index: 2;
+/* Subtitle */
+.primary-text {
+    font-size: 2rem;
+    color: white;
+    margin-top: 0.2em; 
 }
 
-/* Inner shadow for the magnifying glass */
-.magnifying-glass::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4); /* Slightly opaque background */
-    transition: transform 1s ease; /* Smooth transition for the glass effect */
+/* Typing Animation */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid white;
+    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+    padding-right: 0.6em; 
+    margin-left: 1.0em; 
+    
 }
 
-/* Animation to move the glass */
-@keyframes moveGlass {
-    0% {
-        transform: translate(-50%, -50%) translateX(-200px);
-    }
-    50% {
-        transform: translate(-50%, -50%) translateX(200px);
-    }
-    100% {
-        transform: translate(-50%, -50%) translateX(-200px);
-    }
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-/* Applying the animation */
-.magnifying-glass::before {
-    animation: moveGlass 10s linear infinite;
+/* Blinking caret animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .intro-title {
         font-size: 3.0rem;
-    }
-
-    .magnifying-glass {
-        width: 100px;
-        height: 100px;
     }
 }
