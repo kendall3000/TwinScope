@@ -164,11 +164,28 @@
 /* -------------------- General Styles -------------------- */
 /* Overall Background and Font */
 body.about-me-background {
-    background-color: #022136; /* Light Grey */
+    background-color: #022136; /* Dark color for base background */
+    background-image: url('../files/binary-background.png'); /* Path to your image /Users/kendallramos/Documents/Kendall-Kam-WebServer2024/Kendall/assets/files/binary-background.png */
+    background-size: 12%; /* Scale down the image */
+    background-repeat: repeat; /* Repeat the image to cover the page */
+    background-position: top-left; /* Center the image */
     font-family: Arial, sans-serif;
     color: #333; /* Dark Grey */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+/* Overlay for transparency effect */
+body.about-me-background::before {
+    content: '';
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 33, 54, 0.6); /* Adjust the RGBA values for transparency */
+    z-index: -1;
+    pointer-events: none; /* Allow clicks to pass through */
 }
 
 /* About Content Styling */

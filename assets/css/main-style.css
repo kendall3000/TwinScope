@@ -169,7 +169,7 @@
     white-space: nowrap;
     border-right: 0.15em solid white;
     animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
-    padding-right: 0.6em; 
+    padding-right: 0.8em; 
     margin-left: 1.0em; 
     
 }
