@@ -165,7 +165,7 @@
 /* Overall Background and Font */
 body.about-me-background {
     background-color: #022136; /* Dark color for base background */
-    background-image: url('../files/binary-background.png'); /* Path to your image /Users/kendallramos/Documents/Kendall-Kam-WebServer2024/Kendall/assets/files/binary-background.png */
+    background-image: url('../files/backgrounds/binary-background.png'); /* Path to your image /Users/kendallramos/Documents/Kendall-Kam-WebServer2024/Kendall/assets/files/binary-background.png */
     background-size: 12%; /* Scale down the image */
     background-repeat: repeat; /* Repeat the image to cover the page */
     background-position: top-left; /* Center the image */

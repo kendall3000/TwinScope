@@ -7,3 +7,7 @@ test.html
 
 # Ignore macOS system files
 .DS_Store
+
+debug-files/
+
+glass.jpg

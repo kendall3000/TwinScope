@@ -8,7 +8,7 @@
 /* Base Styles */
 body.resume-background {
     background-color: #022136; /* Dark color for base background */
-    background-image: url('../files/binary-background.png'); /* Path to your image */
+    background-image: url('../files/backgrounds/binary-background.png'); /* Path to your image */
     background-size: 12%; /* Scale down the image */
     background-repeat: repeat; /* Repeat the image to cover the page */
     background-position: top left; /* Align with the top-left corner */
@@ -185,7 +185,7 @@ footer a:hover {
 }
 
 .print-button:hover {
-    background-color: #2980b9; /* Darker blue for hover effect */
+    background-color: #23b05e; /* #2980b9;  Darker blue for hover effect */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 

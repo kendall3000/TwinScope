@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         }
     });
+    
 });
 
 // document.addEventListener('DOMContentLoaded', () => {
