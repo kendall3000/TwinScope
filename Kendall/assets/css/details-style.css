@@ -185,6 +185,17 @@ body.project-background::before {
         margin: 20px; /* Adjust margin to show background */
         padding: 15px;
     }
+    .carousel-description {
+        font-size: 14px;
+        bottom: 5px;
+        /* left: 5px; */
+        padding: 5px;
+    }
+
+    .carousel-button {
+        font-size: 18px;
+        padding: 8px;
+    }
 }
 
 /* Footer Styles */
@@ -209,24 +220,24 @@ footer a:hover {
 .carousel {
     position: relative;
     width: 100%;
-    max-height: 500px; /* Adjust as needed */
+    max-height: 500px;
     overflow: hidden;
-    margin-bottom: 20px; /* Space below carousel */
-
+    margin-bottom: 20px; 
+    
 }
 
 .carousel-container {
     position: relative;
     width: 100%;
-    max-height: 500px; /* Adjust as needed */
+    /* max-height: 500px;  */
+    max-width: 90%; /* Maximum width of carousel */
+    margin: 0 auto 20px; /* Center and add space below */
     overflow: hidden;
 }
 
-
-
 /* Hover effect for buttons */
 .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker on hover */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -250,39 +261,66 @@ footer a:hover {
     width: 100%;
     height: auto;
 }
-/* .carousel-item {
-    display: none; 
-}
-
-.carousel-item.active {
-    display: block; 
-} */
 
 .carousel-description {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 97%; 
+    height: 90px; 
+    display: flex; 
+    /* align-items: center;  */
+    justify-content: center;
+    background-color: rgba(242, 247, 252, 0.9);
+    color: #000000;
     padding: 10px;
     border-radius: 5px;
+    overflow: hidden; 
+    text-align: center; 
+    z-index: 20; 
+}
+
+.carousel-description h4 {
+    margin: 0; /* Removes default margin for better control */
+    font-size: 1.0em; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the heading stand out */
+}
+
+.carousel-description p {
+    margin: 10px 0 0 0; /* Adds space between heading and paragraph */
+    font-size: 1em; /* Adjust font size as needed */
 }
 
 .carousel-button {
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; */
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
     font-size: 20px;
     transform: translateY(-50%);
-    z-index: 100; 
+    z-index: 40; 
     display: block; /* Always display buttons */
 }
 
+.prev-button-icon{
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain; 
+    /* filter: invert(1);  */
+}
+
+.next-button-icon{
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain; 
+    /* filter: invert(1);  */
+    transform: rotateY(180deg);
+}
 .prev-button {
     left: 10px;
 }
@@ -291,30 +329,18 @@ footer a:hover {
     right: 10px;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .carousel-description {
-        font-size: 14px;
-        bottom: 5px;
-        left: 5px;
-        padding: 5px;
-    }
 
-    .carousel-button {
-        font-size: 18px;
-        padding: 8px;
-    }
-}
 
 .carousel-container {
     position: relative;
 }
 
+
 .indicator-container {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     width: 100%;
 }
 
@@ -325,6 +351,8 @@ footer a:hover {
     border-radius: 50%;
     margin: 0 5px;
     transition: background-color 0.3s;
+    cursor: pointer; /* Indicate clickable */
+    z-index: 35; 
 }
 
 .indicator.active {
