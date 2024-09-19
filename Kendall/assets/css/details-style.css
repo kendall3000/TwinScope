@@ -240,7 +240,7 @@ footer a:hover {
     position: relative;
     width: 100%;
     max-width: 90%; /* Adjust for wider screens if needed */
-    height: auto; /* Allow height to adjust automatically */
+    height: auto;
     margin: 0 auto;
     overflow: hidden; /* Hide any overflow if images are larger */
 }
@@ -266,6 +266,7 @@ footer a:hover {
     min-width: 100%;
     box-sizing: border-box;
     position: relative;
+    max-height: 500px; /*added this in order to keep the image from pushing the entire carousel down */
 }
 
 .carousel-item img {
