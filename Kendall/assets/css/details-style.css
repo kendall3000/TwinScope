@@ -243,7 +243,7 @@ footer a:hover {
 
 /* Hover effect for buttons */
 .carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.0);
 }
 
 
@@ -300,11 +300,43 @@ footer a:hover {
     font-size: 1em; /* Adjust font size as needed */
 }
 
+.carousel-description {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 97%; 
+    height: 100px; /* Allows height to adjust based on content */
+    display: flex; 
+    flex-direction: column; /* Arranges children vertically */
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(242, 247, 252, 0.9);
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden; 
+    text-align: center; 
+    z-index: 20; 
+}
+
+.carousel-description h5 {
+    margin: 0; /* Removes default margin for better control */
+    font-size: 1.0rem; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the heading stand out */
+}
+
+.carousel-description p {
+    margin: 5px 0 0 0; /* Adds space between heading and paragraph */
+    font-size: 1em; /* Adjust font size as needed */
+    padding-bottom: 20px;
+}
+
 .carousel-button {
     position: absolute;
     top: 50%;
-    /* background-color: rgba(0, 0, 0, 0.5); 
-    color: #fff; */
+    background-color: rgba(0, 0, 0, 0.0); 
+    /* color: #fff; */
     border: none;
     /* padding: 10px; */
     cursor: pointer;
@@ -316,15 +348,15 @@ footer a:hover {
 }
 
 .prev-button-icon{
-    width: 40px; 
-    height: 40px; 
+    width: 50px; 
+    height: 50px; 
     object-fit: contain; 
     /* filter: invert(1);  */
 }
 
 .next-button-icon{
-    width: 40px; 
-    height: 40px; 
+    width: 50px; 
+    height: 50px; 
     object-fit: contain; 
     /* filter: invert(1);  */
     transform: rotateY(180deg);
@@ -366,3 +398,61 @@ footer a:hover {
     background-color: #333; /* Active indicator color */
 }
 
+.access-links {
+    display: flex;
+    justify-content: center; /* Centers the buttons container */
+    padding: 20px 0; /* Adds padding to create space around the section */
+}
+
+.access-buttons {
+    display: flex; /* Ensures buttons are displayed next to each other */
+    justify-content: center; /* Centers the buttons horizontally */
+    width: 100%; /* Ensures the container takes full width */
+    max-width: 80%; /* Limits the container width to 80% of the viewport width */
+    gap: 20px; /* Adds space between buttons */
+}
+
+.website-button, .github-button {
+    flex: 1; /* Allows buttons to grow and take available space */
+    min-width: 150px; /* Ensures a minimum width for each button */
+    background-color: #3498db; /* Blue color */
+    color: white; /* Text color */
+    padding: 15px 100px; /* Adds padding for larger button */
+    border: none; /* Removes default button borders */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.25em; /* Increases font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-align: center; /* Centers text inside the button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.website-button:hover, .github-button:hover {
+    background-color: #2ecc71; /* Green color on hover */
+}
+
+.website-button a, .github-button a {
+    color: white; /* Ensures the link text is white */
+    text-decoration: none; /* Removes underline from the link */
+    display: block; /* Ensures the link covers the full button area */
+    width: 100%; /* Makes the link take the full width of the button */
+    height: 100%; /* Ensures the link covers the full height */
+    text-align: center; /* Centers the text inside the link */
+}
+
+@media (max-width: 768px) {
+    .access-buttons {
+        flex-direction: column; /* Stacks buttons vertically */
+        max-width: 90%; /* Increases the container width for smaller screens */
+        gap: 10px; /* Reduces space between buttons */
+    }
+
+    .website-button, .github-button {
+        width: 100%; /* Buttons take full width of the container */
+        padding: 15px; /* Adjusts padding for smaller screens */
+        font-size: 1em; /* Reduces font size for better fit */
+    }
+}
+
+/* I want to make the hover turn grey 
+i nedd to fix the the general area clicks 
+as well as making sure the indicator clicks work properly  */
