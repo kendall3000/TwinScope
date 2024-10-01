@@ -105,6 +105,13 @@ body.project-background::before {
 .project-overview, .project-description, .project-development-process, .project-technologies, .project-additional-info {
     margin-bottom: 20px;
 }
+.rasa-commands h2{
+    margin-bottom: 10px;
+}
+
+.game-controls h2{
+    margin-bottom: 10px;
+}
 
 .project-overview h1 {
     font-size: 28px;
@@ -129,13 +136,13 @@ body.project-background::before {
     line-height: 1.6;
 }
 
-.project-development-process ul, .project-technologies ul {
+.project-development-process ul, .project-technologies ul, .game-controls ul{
     list-style-type: disc;
     padding-left: 20px;
     line-height: 1.6
 }
 
-.project-additional-info .additional-info-section {
+.project-additional-info, .additional-info-section {
     margin-bottom: 20px;
 }
 
@@ -203,11 +210,20 @@ body.project-background::before {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
     .carousel {
-        height: 40vh; /* Or set a percentage of the viewport */
+        height: 50vh; /* Height will be 50% of the viewport height */
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        max-height: 50vh; /* Ensures the images are no taller than 50% of the viewport */
+        box-sizing: border-box;
+        position: relative;
+        object-fit: cover; /* Keeps image proportions without stretching */
     }
 }
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -367,6 +383,16 @@ footer a:hover {
     /* filter: invert(1);  */
     transform: rotateY(180deg);
 }
+
+.pintrest-icon{
+    width: 30px; 
+    height: auto; 
+    /* object-fit: contain; */
+    object-fit: cover; /* Crops the image to fit the container */
+    vertical-align: middle; /* Aligns with text */
+    margin-left: -3px; /* Space between text and image */
+    margin-bottom: 4px; /* Adjust if necessary to align vertically */
+}
 .prev-button {
     left: 10px;
 }
@@ -458,7 +484,3 @@ footer a:hover {
         font-size: 1em; /* Reduces font size for better fit */
     }
 }
-
-/* I want to make the hover turn grey 
-i nedd to fix the the general area clicks 
-as well as making sure the indicator clicks work properly  */

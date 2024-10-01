@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinking Flag - Project Details</title>
+    <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
+    <link rel="stylesheet" href="../Kendall/assets/css/details-style.css">
+</head>
+<body class="project-background">
+
+<!-- Navbar -->
+<nav class="project-navbar">
+    <div class="project-navbar-content">
+        <a href="portfolio.html" class="back-button"><img src="../Kendall/assets/files/icons/back-arrow.png" alt="Back" class="back-arrow"></a>
+        <span class="project-title">Sinking Flag</span>
+        <a href="index.html" id="navbar-logo">Kendall Ramos</a>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="project-content">
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag1.png" alt="First Rasa Exectution">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Home Screen</h5>
+                            <p class="project-description">
+                                This screen is the start up page for the game that provides a start, option and quit button. 
+                        </div>                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag2.png" alt="Continue or restart new game">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Start from Save or Continue as New</h5>
+                            <p class="project-description">
+                                Ask player if they would like to continue with a saved version or start new or go back.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag3.png" alt="Pick a Map Image">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Pick Map Screen</h5>
+                            <p class="project-description">
+                                If u select new game it provides a couple of map options to start from underwater, volcano, forest or laboratory.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag4.png" alt="Underwater map image">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Underwater Map</h5>
+                            <p class="project-description">
+                                This is a rising platform map where the player is under the water while the platforms are rising up and the player is trying to fall down without missing the plaforms in order to capture the flag
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag5.png" alt="Game over screen">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Game Over Screen - Won</h5>
+                            <p class="project-description">
+                                Once you capture the flag it opens up a menu asking if you would like to restart or quit to the main menu.
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag6.png" alt="Game over screen">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Game Over Screen - Lost</h5>
+                            <p class="project-description">
+                                If u die by one the obstacles or falling off the map then you get the same screen where you are asked if u would like to restart that map or quit to main menu
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag7.png" alt="Forest map">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Forest Map</h5>
+                            <p class="project-description">
+                                This is a side scroll map in the forest with a score count where player is also trying to collect the flag while avoiding obstacles and aqquiring different player boost.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag8.png" alt="Pause Menu">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Pause menu</h5>
+                            <p class="project-description">
+                                A menu that is offered after selecting to pause where you can click on resume, options, save, quit or main menu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag9.png" alt="Volcano Map">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Volcano Map</h5>
+                            <p class="project-description">
+                                Also a side scroll map on a volcano where u are trying to locate and capture the flag u can also see some of the enemy sprites and the player boost.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/SinkingFlag/flag10.png" alt="YourbugRep Quick Facts Page">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Jump Boost</h5>
+                            <p class="project-description">
+                                Shows player using jump boost feature in game where it triples jumping power where u can also see another jump boost.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&lt;" class="prev-button-icon"></button>
+            <button class="carousel-button next-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&gt;" class="next-button-icon"></button>
+            <div class="indicator-container description-indicator-box">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+                <span class="indicator" onclick="goToSlide(5)"></span>
+                <span class="indicator" onclick="goToSlide(6)"></span>
+                <span class="indicator" onclick="goToSlide(7)"></span>
+                <span class="indicator" onclick="goToSlide(8)"></span>
+                <!-- <span class="indicator" onclick="goToSlide(9)"></span>
+                <span class="indicator" onclick="goToSlide(10)"></span> -->
+            </div>
+            <!-- <div class="carousel-indicators">Dynamically populate these items with JavaScript</div> -->
+        </div>
+    </section>
+    <!-- Access links Section -->
+    <section class="access-links">
+        <div class="access-buttons">
+            <a href="https://github.com/kendall3000/Sinking-flag" target="_blank"><button class="website-button">Git Repository</button></a>
+            <!-- <a href="" target="_blank"><button class="github-button">Access Repo</button></a> -->
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="project-overview">
+        <h1 class="project-overview-title">Project Overview</h1>
+        <h2>Sinking Flag: An Adventure Platformer</h2>
+        <p>"Sinking Flag" is an engaging adventure platformer where players navigate through diverse and challenging maps to collect flags. Featuring unique mechanics across multiple environments—underwater, forest, volcano, and laboratory—the game offers a blend of traditional platform elements with distinct challenges in each level. Notably, the volcano map, the largest in the game, features extended exploration and movement mechanics using both 'A' and 'D' keys for navigation. The game’s variety ensures an immersive experience for players as they tackle rising platforms, hydropumps, and more.</p>
+    </section>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <h2>What is Sinking Flag?</h2>
+        <p>"Sinking Flag" is an adventure platformer designed to challenge players with different terrains and unique gameplay mechanics for each map. Players traverse through maps like underwater, forest, volcano, and laboratory, collecting flags while navigating obstacles. The distinct mechanics in each environment, such as rising platforms in the underwater level, ensure variety and keep the gameplay fresh and exciting.</p>
+    </section>
+
+    <!-- Development Process Section -->
+    <section class="project-development-process">
+        <h2>My Development Process</h2>
+        <p>Developing "Sinking Flag" included the following key stages:</p>
+        <ul>
+            <li><strong>Initial Planning:</strong> Defined gameplay elements such as flag collection, unique map designs, and special mechanics for each terrain.</li>
+            <li><strong>Design:</strong> Utilized hand-drawn sprites to enhance the game&apos;s visual appeal and added custom particle systems and shaders to create a polished feel.</li>
+            <li><strong>Implementation:</strong> Employed the Singleton pattern to manage the game manager and used Object Pooling to optimize enemy behavior. AI pathfinding and procedural environment generation were also key components of the game.</li>
+            <li><strong>Challenges:</strong> Audio issues required disabling the options menu. However, the script and logic were retained for future fixes, and the project is fully functional without sound.</li>
+            <li><strong>Testing:</strong> Playtested to ensure that the gameplay mechanics, including controls and platform movement, were smooth and engaging across all maps.</li>
+        </ul>
+    </section>
+
+    <!-- Game Controls Section -->
+    <section class="game-controls additional-info-section">
+        <h2>Game Controls</h2>
+        <ul>
+            <li><strong>Move Left/Right:</strong> 'A' and 'D' keys</li>
+            <li><strong>Jump:</strong> Spacebar</li>
+            <li><strong>Use Items:</strong> 'H' for health, 'B' for boost, 'J' for jump enhancement</li>
+            <li><strong>Open Inventory:</strong> 'i'</li>
+        </ul>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="project-technologies">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Unity (Game engine)</li>
+            <li>C# (Programming language)</li>
+            <li>AI Pathfinding</li>
+            <li>Procedural Generation</li>
+            <li>Singleton Design Pattern</li>
+            <li>Object Pooling</li>
+        </ul>
+    </section>
+
+    <!-- Code Snippets Section -->
+    <section class="code-snippets">
+        <h2>Code Snippets for Design and Optimization Patterns</h2>
+        <pre><code>
+    // Singleton Pattern Example
+    public class GameManager : MonoBehaviour {
+        public static GameManager Instance { get; private set; }
+
+        void Awake() {
+            if (Instance == null) {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            } else {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    // Object Pooling Example
+    public class EnemyPool : MonoBehaviour {
+        public static EnemyPool SharedInstance;
+        public List<GameObject> pooledObjects;
+        public GameObject objectToPool;
+        public int amountToPool;
+
+        void Awake() {
+            SharedInstance = this;
+            pooledObjects = new List<GameObject>();
+            for (int i = 0; i < amountToPool; i++) {
+                GameObject obj = Instantiate(objectToPool);
+                obj.SetActive(false);
+                pooledObjects.Add(obj);
+            }
+        }
+    }
+        </code></pre>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="project-additional-info">
+        <h2>Additional Information</h2>
+        
+        <!-- Key Information Summary -->
+        <div class="additional-info-section">
+            <h3>Key Information Summary</h3>
+            <p>"Sinking Flag" blends traditional platformer mechanics with innovative elements such as rising platforms and hydropumps. Despite the removal of audio features due to technical issues, the game remains fully playable, and the code for the audio logic is available in the GitHub repository for future improvements. AI-driven enemies, procedural environment generation, and optimization patterns, such as the Singleton and Object Pooling, add depth to the game.</p>
+        </div>
+        
+        <!-- Frequently Asked Questions -->
+        <div class="additional-info-section">
+            <h3>Frequently Asked Questions</h3>
+            <dl>
+                <dt><strong>What are the unique mechanics in each map?</strong></dt>
+                <dd>Each map features different gameplay elements such as rising platforms in the underwater map, large exploration areas in the volcano map, and different challenges in the forest and laboratory maps.</dd>
+                
+                <dt><strong>How did you implement AI?</strong></dt>
+                <dd>AI in "Sinking Flag" uses predefined behaviors and state machines for complex enemy actions, as well as pathfinding to navigate procedurally generated environments.</dd>
+                
+                <dt><strong>Why is there no audio in the game?</strong></dt>
+                <dd>Due to technical issues with the audio implementation, it was disabled in the final submission, but the logic and scripts remain in the GitHub repository.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- Media Credits Section -->
+    <section class="media-credits">
+        <h2>Media Credits</h2>
+        <ul>
+            <li>Sprites from Pinterest
+                <a href="https://pin.it/hbs2XvLfQ"><img src="../Kendall/assets/files/icons/pintrest-icon.png" alt="Link to pintrest sprits" class="pintrest-icon" target="_blank"></a>
+            </li>
+            <li>Hand-drawn sprites created by me</li>
+            <li><a href="https://www.youtube.com/watch?v=rT-QsFva2EE&t=2831s">YouTube video references</a></li>
+        </ul>
+    </section>
+
+    <!-- Game Download Section -->
+    <!-- <section class="game-download">
+        <h2>Link to Download Your Game Files</h2>
+        <p>GitHub Repository: <a href="https://github.com/kendall3000/Sinking-flag">Sinking Flag</a></p>
+    </section> -->
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Kendall Ramos. All rights reserved.</p>
+</footer>
+<script src="../Kendall/assets/js/project-details.js"></script>
+
+</body>
+</html>

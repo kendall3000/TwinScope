@@ -1,0 +1,214 @@
+<!-- run the command 'rasa run actions'
+open a new terminal/command prompt window
+run the command 'rasa shell' in the new window -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Chatbot - Project Details</title>
+    <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
+    <link rel="stylesheet" href="../Kendall/assets/css/details-style.css">
+</head>
+<body class="project-background">
+
+<!-- Navbar -->
+<nav class="project-navbar">
+    <div class="project-navbar-content">
+        <a href="portfolio.html" class="back-button"><img src="../Kendall/assets/files/icons/back-arrow.png" alt="Back" class="back-arrow"></a>
+        <span class="project-title">Rasa Chatbot</span>
+        <a href="index.html" id="navbar-logo">Kendall Ramos</a>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="project-content">
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot1.PNG" alt="First Rasa Exectution">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>First Test Run</h5>
+                            <p class="project-description">
+                                This is the first test run of the Rasa chatbot, primarily interacting with Wolfram Alpha. With minimal training data, it demonstrates how much performance can improve with additional training.                            
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot2.PNG" alt="Conditioning Example">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Setting Simple rules</h5>
+                            <p class="project-description">
+                                Examples of rules where a user&apos;s query matches a defined intent, triggering a corresponding action. These rules are simple but can scale to much more complex scenarios.                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot3.PNG" alt="YourbugRep Pricing Page">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Training Data</h5>
+                            <p class="project-description">
+                                This is an example of training data formatted in the nlu.yml file.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot4.PNG" alt="YourbugRep Login Page">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>More Training Data</h5>
+                            <p class="project-description">
+                                Another example of training data provided in the nlu.yml file.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot5.png" alt="YourbugRep external Database Page">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Intent Data</h5>
+                            <p class="project-description">
+                                The bot processes user queries by determining which API to call based on recognized intents. To expand intent recognition, additional examples were generated with the help of ChatGPT. This is the corresponding training file.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot6.png" alt="Custom API calls from Rasa Chatbot">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Custom API Calls</h5>
+                            <p class="project-description">
+                                Custom API calls are triggered when the bot detects queries related to math or general knowledge.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot7.png" alt="YourbugRep Account Management Page">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>More Intent Data</h5>
+                            <p class="project-description">
+                                An example of intent data, where the intent reflects the user&apos;s goal, and the provided examples illustrate different ways users might express that intent.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/ChatBot/chatbot8.png" alt="YourbugRep Quick Facts Page">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Final Test Run</h5>
+                            <p class="project-description">
+                                The final test run of the chatbot, showcasing the culmination of its training and functionality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&lt;" class="prev-button-icon"></button>
+            <button class="carousel-button next-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&gt;" class="next-button-icon"></button>
+            <div class="indicator-container description-indicator-box">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+                <span class="indicator" onclick="goToSlide(5)"></span>
+                <span class="indicator" onclick="goToSlide(6)"></span>
+                <span class="indicator" onclick="goToSlide(7)"></span>
+                <span class="indicator" onclick="goToSlide(8)"></span>
+                <!-- <span class="indicator" onclick="goToSlide(9)"></span>
+                <span class="indicator" onclick="goToSlide(10)"></span> -->
+            </div>
+            <!-- <div class="carousel-indicators">Dynamically populate these items with JavaScript</div> -->
+        </div>
+    </section>
+    <!-- Access links Section -->
+    <section class="access-links">
+        <div class="access-buttons">
+            <a href="https://github.com/kendall3000/Chatbot" target="_blank"><button class="website-button">Git Repository</button></a>
+            <!-- <a href="" target="_blank"><button class="github-button">Access Repo</button></a> -->
+        </div>
+    </section>
+    <!-- Overview Section -->
+    <section class="project-overview">
+        <h1 class="project-overview-title">Project Overview</h1>
+        <h2>Rasa Chatbot Implementation</h2>
+        <p>The Rasa chatbot was designed and implemented to streamline customer interactions. It uses machine learning-based dialogue management to handle both common and complex queries.</p>
+    </section>
+
+    <!-- Command Instructions Section -->
+    <section class="rasa-commands additional-info-section">
+        <h2>Running the Chatbot</h2>
+        <p>Follow these steps to run the Rasa chatbot:</p>
+        <ol>
+            <li>Open a terminal or command prompt window.</li>
+            <li>Run the command: <code>rasa run actions</code> to start the action server.</li>
+            <li>Open a new terminal or command prompt window.</li>
+            <li>Run the command: <code>rasa shell</code> to start interacting with the chatbot.</li>
+        </ol>
+    </section>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <h2>What is Rasa Chatbot?</h2>
+        <p>The Rasa Chatbot is an open-source framework for building contextual AI assistants. It combines natural language understanding (NLU) and dialogue management to create flexible and adaptable chatbots. This project aimed to integrate Rasa with a custom action server for personalized user experiences.</p>
+    </section>
+
+    <!-- Development Process Section -->
+    <section class="project-development-process">
+        <h2>My Development Process</h2>
+        <p>The development of the chatbot involved several key steps:</p>
+        <ul>
+            <li><strong>Initial Planning:</strong> Defined use cases and customer interaction workflows.</li>
+            <li><strong>Training the NLU Model:</strong> Used Rasa's training data format to define intents, entities, and responses.</li>
+            <li><strong>Custom Actions:</strong> Created custom actions for dynamic responses using Rasa SDK and Python.</li>
+            <li><strong>Testing:</strong> Tested chatbot performance with sample conversations to ensure response accuracy and relevance.</li>
+        </ul>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="project-technologies">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Rasa (NLU & Core)</li>
+            <li>Python</li>
+            <li>Custom Action Server</li>
+            <li>Command-line interface for interaction</li>
+        </ul>
+    </section>
+    <section class="project-additional-info">
+        <h2>Additional Information</h2>
+        <!-- Key Information Summary -->
+        <div class="additional-info-section">
+            <h3>Key Information Summary</h3>
+            <p>This Rasa chatbot is designed to enhance user interaction by providing accurate responses based on the input it receives. Integrated with natural language processing (NLP) capabilities, the chatbot can understand various queries and guide users through complex tasks with ease. It&apos;s optimized for both web and mobile, ensuring a seamless user experience.</p>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <div class="additional-info-section">
+            <h3>Frequently Asked Questions</h3>
+            <dl>
+                <dt><strong>What does the Rasa chatbot do?</strong></dt>
+                <dd>The chatbot can handle a wide range of queries and guide users through processes, leveraging its NLP engine to ensure relevant and accurate responses.</dd>
+
+                <dt><strong>How can I customize the chatbot's responses?</strong></dt>
+                <dd>You can customize the responses by training the chatbot on new data or modifying the existing intent and entity recognizers in the Rasa framework.</dd>
+
+                <dt><strong>Is the Rasa chatbot mobile-friendly?</strong></dt>
+                <dd>Yes, the chatbot is designed to work seamlessly across mobile and web platforms, ensuring accessibility on various devices.</dd>
+
+                <dt><strong>What technologies are used in this chatbot?</strong></dt>
+                <dd>The chatbot is built using Rasa, a framework for developing AI-driven conversational agents, along with Python for backend logic, and frontend technologies like React for user interface integration.</dd>
+            </dl>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Kendall Ramos. All rights reserved.</p>
+</footer>
+<script src="../Kendall/assets/js/project-details.js"></script>
+
+</body>
+</html>
