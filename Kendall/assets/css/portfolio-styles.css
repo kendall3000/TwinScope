@@ -1,0 +1,215 @@
+/* .projects {
+    background: #022136;
+    color: white;
+    padding: 5rem 0;
+  }
+  
+  .projects__row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .projects__row {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      margin-bottom: 8rem;
+      text-align: center;
+    }
+  }
+  
+  .projects__row:last-child {
+    margin-bottom: 0;
+  }
+  
+  .projects__row-img-cont {
+    overflow: hidden;
+  }
+  
+  .projects__row-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .projects__row-content {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .projects__row-content-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects__row-content-desc {
+    font-size: 1.6rem;
+    color: grey;
+    max-width: 60rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+  
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #3498db; 
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9; 
+  } */
+
+.project-container {
+    position: relative; /* Make the container relative for absolute positioning of the button */
+    max-width: 90%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.heading-sec__main {
+    display: block;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative; 
+    color:#000000;
+}
+.heading-sec__main--lt {
+    color: #fff; 
+}
+    .heading-sec__main--lt::after {
+    content: '';
+    background: #fff !important; 
+}
+.heading-sec__main::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: #3498db;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px; 
+}
+@media only screen and (max-width: 37.5em) {
+    .heading-sec__main::after {
+        top: calc(100% + 1.2rem); 
+    } 
+}
+
+
+.heading-sec__sub {
+    font-size: 1.6rem;
+    text-align: left; /* Align the subheading to the left */
+    color: #000000; /* Light grey for readability */
+    max-width: 90%; /* Control the width to prevent it from stretching too far */
+    align-self: flex-start; /* Align the subheading to the left */
+}
+
+.projects {
+    /* background: #022136; 
+    color: white; */
+    padding: 1rem 0;
+}
+
+.projects__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.projects__row-img-cont {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 2rem;
+}
+
+.projects__row-img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 105%;
+    max-height: 450px;
+    margin: 0 auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* .projects__row-img img{
+width: 10%;
+
+} */
+
+.projects__row-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.projects__row-content-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.projects__row-content-desc {
+    font-size: 1.3rem;
+    color: #000000; /* Light grey for readability */
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: #3498db; /* Your blue color */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #23b05e; /* Your green accent color */
+}
+
+@media (max-width: 900px) {
+    .projects__row {
+        flex-direction: column;
+    }
+
+    .projects__row-img-cont,
+    .projects__row-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .projects__row-img {
+        margin-bottom: 2rem;
+    }
+}

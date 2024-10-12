@@ -1,61 +1,183 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Kendall Ramos | Portfolio</title>
-		<link rel="stylesheet" href="../assets/css/basic-styles.css"> 
-		<link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
-	</head>
-	<body class="about-me-background">
-		 <!-- Navbar -->
-         <header>
-            <nav class="navbar">
-                <div class="navbar-container">
-                    <a href="index.html" id="navbar-logo">Kendall Ramos</a>
-                    <div class="navbar-toggle" id="mobile-menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <ul class="navbar-menu">
-                        <li class="navbar-item" data-description="Return to the homepage">
-                            <a href="../index.html" class="navbar-links">Home</a>
-                            <span class="tooltip">Return to the homepage</span>
-                        </li>
-                        <li class="navbar-item" data-description="Learn more about my journey and background">
-                            <a href="index.html" class="navbar-links">Behind the Code</a>
-                            <span class="tooltip">Learn more about my journey and background</span>
-                        </li>
-                        <li class="navbar-item" data-description="View my resume and qualifications">
-                            <!-- <a href="assets/files/tech-resume.pdf" class="navbar-links" target="_blank">Resume</a> -->
-                            <a href="resume.html" class="navbar-links">Resume</a>
-                            <span class="tooltip">View my resume and qualifications</span>
-                        </li>
-                        <li class="navbar-item" data-description="Explore my portfolio of projects">
-                            <a href="portfolio.html" class="navbar-links">Portfolio</a>
-                            <span class="tooltip">Explore my portfolio of projects</span>
-                        </li>
-                        <li class="navbar-item" data-description="Visit my GitHub profile">
-                            <a href="https://github.com/kendall3000" class="navbar-links" target="_blank">GitHub</a>
-                            <span class="tooltip">Visit my GitHub profile</span>
-                        </li>
-                        <li class="navbar-item" data-description="Connect with me on LinkedIn">
-                            <a href="https://www.linkedin.com/in/kendall-ramos/" class="navbar-links" target="_blank">LinkedIn</a>
-                            <span class="tooltip">Connect with me on LinkedIn</span>
-                        </li>
-                    </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendall Ramos | Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/basic-styles.css"> 
+    <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
+    <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
+    <link rel="stylesheet" href="../Kendall/assets/css/portfolio-styles.css"> 
+    <link rel="stylesheet" href="assets/css/resume-style.css">
+</head>
+<body class="about-me-background">
+    <!-- navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" id="navbar-logo">Kendall Ramos</a>
+                <div class="navbar-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-            </nav>
-        </header>
-		<!-- portfolio in progress -->
-        <footer class="footer">
-            <p>&copy; 2024 Kendall Ramos. All rights reserved.</p>
+                <ul class="navbar-menu">
+                    <li class="navbar-item" data-description="Return to the homepage">
+                        <a href="../index.html" class="navbar-links">Home</a>
+                        <span class="tooltip">Return to the homepage</span>
+                    </li>
+                    <li class="navbar-item" data-description="Learn more about my journey and background">
+                        <a href="index.html" class="navbar-links">Behind the Code</a>
+                        <span class="tooltip">Learn more about my journey and background</span>
+                    </li>
+                    <li class="navbar-item" data-description="View my resume and qualifications">
+                        <!-- <a href="assets/files/tech-resume.pdf" class="navbar-links" target="_blank">Resume</a> -->
+                        <a href="resume.html" class="navbar-links">Resume</a>
+                        <span class="tooltip">View my resume and qualifications</span>
+                    </li>
+                    <li class="navbar-item" data-description="Explore my portfolio of projects">
+                        <a href="portfolio.html" class="navbar-links">Portfolio</a>
+                        <span class="tooltip">Explore my portfolio of projects</span>
+                    </li>
+                    <li class="navbar-item" data-description="Visit my GitHub profile">
+                        <a href="https://github.com/kendall3000" class="navbar-links" target="_blank">GitHub</a>
+                        <span class="tooltip">Visit my GitHub profile</span>
+                    </li>
+                    <li class="navbar-item" data-description="Connect with me on LinkedIn">
+                        <a href="https://www.linkedin.com/in/kendall-ramos/" class="navbar-links" target="_blank">LinkedIn</a>
+                        <span class="tooltip">Connect with me on LinkedIn</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- portfolio in progress -->
+    <div class="project-container">
+        <section id="projects" class="projects sec-pad">
+            <div class="main-container">
+                <!-- Title and subtitle -->
+                <h2 class="heading heading-sec heading-sec__mb-bg">
+                <span class="heading-sec__main">
+                    Projects
+                </span>
+                <span class="heading-sec__sub">
+                    Allow me to share some of the personal projects I've undertaken...
+                </span>
+                </h2>
+                <!-- Project content -->
+                <div class="projects__content">
+                    <!-- YourBugRep project section -->
+                    <div class="projects__row" >
+                        <div class="jump" id="YourbugRep"></div>
+                        <div class="projects__row-img-cont">
+                            <img src="../Kendall/assets/images/BugRep/bugrep-image1.png" alt="YourBugRep Homepage Screenshot" class="projects__row-img" loading="lazy" />
+                        </div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">
+                                YourBugRep Website
+                            </h3>
+                            <p class="projects__row-content-desc">
+                                YourBugRep is a comprehensive travel companion tailored to help users avoid bed bug encounters while traveling. t uses Firebase and Firestore for real-time data on bed bug complaints, providing up-to-date information. The app features a responsive interface built with HTML, CSS, and JavaScript, ensuring a smooth user experience across devices. Google Cloud Functions power real-time alerts, allowing users to receive notifications about potential bed bug risks at their accommodations.
+                            </p>
+                            <a href="bedbug.html" class="btn btn--med btn--theme dynamicBgClr" >Info / Git Repository</a>
+                        </div>
+                    </div>
+                    <!-- Sinking flag project section -->
+                    <div class="jump" id="SinkingFlag"></div>
+                    <div class="projects__row">
+                        <div class="projects__row-img-cont">
+                            <img src="../Kendall/assets/images/SinkingFlag/flag1.png" alt="SinkingFlag Game Homescreen Screenshot" class="projects__row-img" loading="lazy" />
+                        </div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">Sinking Flag</h3>
+                            <p class="projects__row-content-desc">
+                            Brief description of your project, outlining its purpose and key features.
+                            </p>
+                            <a href="sinking-flag.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
+                        </div>
+                    </div>
+                    <!-- Rasa Chatbot project section -->
+                    <div class="jump" id="Rasa"></div>
+                    <div class="projects__row">
+                        <div class="projects__row-img-cont">
+                            <img src="../Kendall/assets/images/ChatBot/chatbot1.PNG" alt="Working Rasa Chatbot" class="projects__row-img" loading="lazy" />
+                        </div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">Rasa Chatbot</h3>
+                            <p class="projects__row-content-desc">
+                            Brief description of your project, outlining its purpose and key features.
+                            </p>
+                            <a href="rasa-chatbot.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
+                        </div>
+                    </div>
+                    <!-- Flappy bird project section -->
+                    <div class="jump" id="Flappy"></div>
+                    <div class="projects__row">
+                        <div class="projects__row-img-cont">
+                            <img src="./assets/images/your-project2.jpg" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy" />
+                        </div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">Flappy Bird Game</h3>
+                            <p class="projects__row-content-desc">
+                            Brief description of your project, outlining its purpose and key features.
+                            </p>
+                            <a href="https://github.com/yourusername/your-project2" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Info / Git Repository</a>
+                        </div>
+                    </div>
+                    <!-- ebookfair project section -->
+                    <div class="jump" id="eBookfair"></div>
+                    <div class="projects__row">
+                        <div class="projects__row-img-cont">
+                            <img src="../Kendall/assets/images/ebookfair/ebookfair_1.webp" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy" />
+                        </div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">eBookfair Website</h3>
+                            <p class="projects__row-content-desc">
+                            Brief description of your project, outlining its purpose and key features.
+                            </p>
+                            <a href="eBookfair.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
+                        </div>
+                    </div>
+                    <!-- Meal Prep project section -->
+                    <div class="jump" id="MealPrep"></div>
+                    <div class="projects__row">
+                        <div class="projects__row-img-cont">
+                            <img src="../Kendall/assets/images/MealPrep/image1.png" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy"/>
+                        </div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">Meal Prep App</h3>
+                            <p class="projects__row-content-desc">
+                            Brief description of your project, outlining its purpose and key features.
+                            </p>
+                            <a href="meal-prep.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
+                        </div>
+                    </div>
+                    <!-- All Assignments -->
+                    <div class="projects__row">
+                        <div class="projects__row-img-cont">
+                            <img src="../Kendall/assets/images/Coursework.png" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy" />
+                        </div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">Project 2</h3>
+                            <p class="projects__row-content-desc">
+                            Brief description of your project, outlining its purpose and key features.
+                            </p>
+                            <a href="https://github.com/kendall3000/Assignments" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Info / Git Repository</a>
+                        </div>
+                    </div>
             
-            <br>
-            <p>Last updated 09-18-2024</p>
-        </footer>
-		<!-- contact will also be at the bottom of each of out homepage  -->
-		<script src="../Kendall/assets/js/main.js"></script>
-	</body>
+                </div>
+            </div>
+        </section>                  
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kendall Ramos. All rights reserved.</p>
+        
+        <br>
+        <p>Last updated 09-18-2024</p>
+    </footer>
+    <!-- contact will also be at the bottom of each of out homepage  -->
+    <script src="../Kendall/assets/js/main.js"></script>
+</body>
 </html>
