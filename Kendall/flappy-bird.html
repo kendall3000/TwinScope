@@ -1,1 +1,222 @@
 <!-- add id flappy back button -->
+<!-- redo in progress  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird - Project Details</title>
+    <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
+    <link rel="stylesheet" href="../Kendall/assets/css/details-style.css">
+</head>
+<body class="project-background">
+
+<!-- Navbar -->
+<nav class="project-navbar">
+    <div class="project-navbar-content">
+        <a href="portfolio.html#Flappy" class="back-button"><img src="../Kendall/assets/files/icons/back-arrow.png" alt="Back" class="back-arrow"></a>
+        <span class="project-title">Flappy Bird Game</span>
+        <a href="index.html" id="navbar-logo">Kendall Ramos</a>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="project-content">
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image1.png" alt="Meal Prep Home Page showing login and register options">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Home Page</h5>
+                            <p class="project-description">
+                                Home page asking if you would like to login or register.
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image2.png" alt="Meal Prep Sign Up Page with fields for username and password">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Sign Up Page</h5>
+                            <p class="project-description">
+                                The signup page prompts new users to enter their login and personal information. It asks users to set up a username and password that are encrypted.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Uncomment if needed -->
+                    <!-- <div class="carousel-item">
+                        <img src="../Kendall/assets/images/MealPrep/image3.png" alt="Detailed view of a recipe page with add to meal plan button">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Demo Recipe Page</h5>
+                            <p class="project-description">
+                                The recipe page provides detailed information about individual recipes, including ingredients and an 'Add to Meal Plan' button.
+                            </p>
+                        </div>
+                    </div> -->
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image3.png" alt="MVC flow plan diagram showing app architecture">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>MVC Flow Plan</h5>
+                            <p class="project-description">
+                                Created a design plan outlining the flow and functionality of the app.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image4.png" alt="Example of a personalized meal plan with recipe suggestions">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Meal Plan Page</h5>
+                            <p class="project-description">
+                                A sample meal plan generated based on the user's input and goals, showcasing recipe suggestions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image5.png" alt="Login page with fields for entering username and password">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Login Page</h5>
+                            <p class="project-description">
+                                The login page asks users to enter their credentials to sign in.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images//FlappyBird/image6.png" alt="Detailed MVC flowchart showing interactions between models, views, and controllers">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Detailed MVC Flow</h5>
+                            <p class="project-description">
+                                Provided a detailed explanation of the MVC architecture for the app.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image7.png" alt="Profile page where user can input weight, height, allergies, and generate meal plans">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Profile Page</h5>
+                            <p class="project-description">
+                                The profile page allows users to enter personal information, such as weight and height, to calculate BMI, as well as specify allergies to generate personalized meal plans.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image8.png" alt="BMI Calculator page with fields for weight and height input to calculate BMI">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>BMI Calculator Page</h5>
+                            <p class="project-description">
+                                This page allows you to enter your weight in either kg or lb and height in either cm or ft, then calculates and displays your BMI.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/FlappyBird/image9.png" alt="Data flow diagram showing the connections between app data and database">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Data Flow Page</h5>
+                            <p class="project-description">
+                                Displays how data is processed and connected via the database throughout the app.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&lt;" class="prev-button-icon"></button>
+            <button class="carousel-button next-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&gt;" class="next-button-icon"></button>
+            <div class="indicator-container description-indicator-box">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+                <span class="indicator" onclick="goToSlide(5)"></span>
+                <span class="indicator" onclick="goToSlide(6)"></span>
+                <span class="indicator" onclick="goToSlide(7)"></span>
+                <span class="indicator" onclick="goToSlide(8)"></span>
+                <span class="indicator" onclick="goToSlide(9)"></span>
+                <span class="indicator" onclick="goToSlide(10)"></span>
+            </div>
+            <!-- <div class="carousel-indicators">Dynamically populate these items with JavaScript</div> -->
+        </div>
+    </section>
+    <!-- Access links Section -->
+    <section class="access-links">
+        <div class="access-buttons">
+            <a href="https://github.com/kendall3000/MealPrepApp" target="_blank"><button class="website-button">Git Repository</button></a>
+            <!-- <a href="" target="_blank"><button class="github-button">Access Repo</button></a> -->
+        </div>
+    </section>
+    <!-- Overview Section -->
+    <!-- Project Details Page for eBookfair -->
+
+    <!-- Overview Section -->
+    <section class="project-overview">
+        <h1 class="project-overview-title">Project Overview</h1>
+        <h2>Prep365: A Meal Preparation Application</h2>
+        <p>Prep365 is a Java-based meal preparation application designed to assist users with meal planning based on their health goals. Users can log in to create personalized meal plans, track their BMI by entering height and weight, and receive recipes based on their preferences. The app provides a detailed and user-friendly interface to help individuals meet their dietary needs.</p>
+    </section>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <h2>What is Prep365?</h2>
+        <p>Prep365 is a comprehensive meal preparation application that enables users to log in, calculate their BMI, and receive tailored meal plans and recipes based on their inputs. It emphasizes a user-friendly experience, ensuring individuals can easily navigate their dietary needs while managing their health goals.</p>
+    </section>
+
+    <!-- Development Process Section -->
+    <section class="project-development-process">
+        <h2>My Development Process</h2>
+        <p>Developing Prep365 involved several key stages:</p>
+        <ul>
+            <li><strong>Initial Planning:</strong> Collaborated with the team to define core features, including the BMI calculator, login functionality, and meal planning. Mapped out user flows and identified potential challenges.</li>
+            <li><strong>Design:</strong> Created wireframes for the app's user interface and mapped out the Model-View-Controller (MVC) design. Focused on delivering a smooth and intuitive user experience.</li>
+            <li><strong>Implementation:</strong> Primarily used Java for backend logic, implementing the BMI calculator, login system, and meal planner. Integrated a public recipe API for meal suggestions and connected it to user inputs for personalized results.</li>
+            <li><strong>Challenges:</strong> Overcame challenges like managing API requests, securing user data, and designing a flexible meal planner that accommodates various user inputs.</li>
+            <li><strong>Testing:</strong> Conducted rigorous testing of the login system, BMI calculator, and meal planner. Verified that the allergy filter works accurately and the app delivers suitable meal suggestions.</li>
+        </ul>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="project-technologies">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Java: Core programming language for app development.</li>
+            <li>Firebase: Used for user authentication and data storage.</li>
+            <li>API Integration: Pulled recipe data from a public website for meal plans.</li>
+            <li>MVC Pattern: Used to structure the app, ensuring a clean separation of logic, interface, and data.</li>
+            <li>Encryption: Secured user credentials with encryption techniques.</li>
+        </ul>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="project-additional-info">
+        <h2>Additional Information</h2>
+        
+        <!-- Key Information Summary -->
+        <div class="additional-info-section">
+            <h3>Key Information Summary</h3>
+            <p>Prep365 is a meal preparation application designed to offer users personalized meal planning and tracking. The application effectively combines user inputs with recipe data to ensure a tailored experience, accommodating dietary preferences and restrictions.</p>
+        </div>
+        
+        <!-- Frequently Asked Questions -->
+        <div class="additional-info-section">
+            <h3>Frequently Asked Questions</h3>
+            <dl>
+                <dt><strong>What challenges did you face while developing Prep365?</strong></dt>
+                <dd>Some challenges included integrating the recipe API to ensure seamless meal suggestions and creating an effective allergy filter system. We also needed to manage user data securely.</dd>
+                
+                <dt><strong>What are future improvements for Prep365?</strong></dt>
+                <dd>Potential future updates include enhancing the meal suggestion algorithm, adding more customization options for users, and refining the UI for even smoother navigation.</dd>
+            </dl>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Kendall Ramos. All rights reserved.</p>
+</footer>
+<script src="../Kendall/assets/js/project-details.js"></script>
+
+</body>
+</html>

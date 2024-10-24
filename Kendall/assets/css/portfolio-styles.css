@@ -200,16 +200,18 @@ width: 10%;
 
 @media (max-width: 900px) {
     .projects__row {
-        flex-direction: column;
+      flex-direction: column;
     }
 
-    .projects__row-img-cont,
+    .projects__row-img-cont{
+      max-width: 100%;
+    }
     .projects__row-content {
-        max-width: 100%;
-        padding: 0;
+      max-width: 100%;
+      padding: 0;
     }
 
     .projects__row-img {
-        margin-bottom: 2rem;
+      margin-bottom: 2rem;
     }
 }
