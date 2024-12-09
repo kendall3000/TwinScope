@@ -33,7 +33,7 @@
         <section class="contact-form-section">
             <h2>Contact Us</h2>
             <!-- <form id="contact-form" action="send-email.php" method="POST"> -->
-            <form id="contact-form" method="POST">
+            <form id="contact-form" method="POST" onsubmit="return handleFormSubmit(event)">
                 <label for="contact-option">Who would you like to contact?</label>
                 <select id="contact-option" name="contact-option" required>
                     <option value="Kendall">Kendall</option>
@@ -52,9 +52,12 @@
 
                 <button type="submit">Send Message</button>
             </form>
+
+            <div id="success-message" style="display:none;">Thank you! Your message has been sent successfully.</div>
         </section>
     </main>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/formspree.js"></script>
+    <script src="assets/js/handleFormSubmit.js"></script>
 </body>
 </html>

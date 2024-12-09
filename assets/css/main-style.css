@@ -116,6 +116,7 @@
         display: block;
     }
 }
+
 /* Intro Section Styles */
 .intro-section {
     position: relative;
@@ -137,7 +138,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 /* Main Title */
 .intro-title {
@@ -171,7 +171,6 @@
     animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
     padding-right: 0.8em; 
     margin-left: 1.0em; 
-    
 }
 
 /* Typing animation */
@@ -193,13 +192,16 @@
     }
 }
 
+/* Contact Form Section */
 .contact-form-section {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Space between navbar and form */
+    margin-bottom: 50px; /* Space between navbar and form */
 }
 
 .contact-form-section h2 {
@@ -217,22 +219,48 @@
 .contact-form-section textarea, 
 .contact-form-section select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .contact-form-section button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form-section button:hover {
     background-color: #2ecc71;
+}
+
+/* Success Message */
+#success-message {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .contact-form-section input, 
+    .contact-form-section textarea, 
+    .contact-form-section select {
+        font-size: 0.9rem; /* Make input text a bit smaller on smaller screens */
+    }
+
+    .contact-form-section button {
+        font-size: 0.9rem; /* Adjust button font size */
+    }
 }

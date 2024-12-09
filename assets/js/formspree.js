@@ -6,13 +6,13 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
     // Set the recipient email based on selection
     if (contactOption === "Kendall") {
-        formAction = "https://formspree.io/f/xpwzerdn"; // Formspree endpoint for Kendall
+        formAction = "https://formspree.io/f/xdkovzze"; // Formspree endpoint for Kendall
     } 
     else if (contactOption === "Kameron") {
         formAction = "https://formspree.io/f/mjkvdrrg"; // Formspree endpoint for Kameron
     } 
     else {
-        formAction = "https://formspree.io/f/{both_form_id}"; // Formspree endpoint for Both
+        formAction = "https://formspree.io/f/xpwzerdn"; // Formspree endpoint for Both right now sends to me until i upgrade to do both
     }
 
     // Update form action dynamically
