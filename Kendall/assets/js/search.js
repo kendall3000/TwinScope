@@ -6,49 +6,57 @@ const projectsContent = document.getElementById('projectsContent');
 // Function to filter projects based on name
 function filterProjects() {
     const searchQuery = searchInput.value.toLowerCase();
-    const sortValue = sortSelect.value;
+    const projectRows = document.querySelectorAll('.projects__row');
 
-    const projects = Array.from(projectsContent.getElementsByClassName('projects__row'));
-
-    let filteredProjects = projects.filter(project => {
-        const projectName = project.querySelector('.projects__row-content-title').textContent.toLowerCase();
-        return projectName.includes(searchQuery);
+    projectRows.forEach(row => {
+        const projectName = row.getAttribute('data-name').toLowerCase();
+        if (projectName.includes(searchQuery)) {
+            row.style.display = '';  // Show the project row
+        } else {
+            row.style.display = 'none';  // Hide the project row
+        }
     });
+}
 
-    // Sorting logic
+// Function to sort projects based on selected criteria
+function sortProjects() {
+    const sortValue = sortSelect.value;
+    const projectRows = Array.from(document.querySelectorAll('.projects__row'));
+
     if (sortValue === 'dateAsc') {
-        filteredProjects.sort((a, b) => {
+        projectRows.sort((a, b) => {
             const dateA = new Date(a.getAttribute('data-date'));
             const dateB = new Date(b.getAttribute('data-date'));
             return dateA - dateB;
         });
     } else if (sortValue === 'dateDesc') {
-        filteredProjects.sort((a, b) => {
+        projectRows.sort((a, b) => {
             const dateA = new Date(a.getAttribute('data-date'));
             const dateB = new Date(b.getAttribute('data-date'));
             return dateB - dateA;
         });
     } else if (sortValue === 'alphaAsc') {
-        filteredProjects.sort((a, b) => {
-            const nameA = a.querySelector('.projects__row-content-title').textContent.toLowerCase();
-            const nameB = b.querySelector('.projects__row-content-title').textContent.toLowerCase();
+        projectRows.sort((a, b) => {
+            const nameA = a.getAttribute('data-name').toLowerCase();
+            const nameB = b.getAttribute('data-name').toLowerCase();
             return nameA.localeCompare(nameB);
         });
     } else if (sortValue === 'alphaDesc') {
-        filteredProjects.sort((a, b) => {
-            const nameA = a.querySelector('.projects__row-content-title').textContent.toLowerCase();
-            const nameB = b.querySelector('.projects__row-content-title').textContent.toLowerCase();
+        projectRows.sort((a, b) => {
+            const nameA = a.getAttribute('data-name').toLowerCase();
+            const nameB = b.getAttribute('data-name').toLowerCase();
             return nameB.localeCompare(nameA);
         });
     }
 
-    // Clear existing content and append filtered projects
-    projectsContent.innerHTML = '';
-    filteredProjects.forEach(project => {
-        projectsContent.appendChild(project);
-    });
+    // Reorder the project rows in the DOM
+    projectRows.forEach(row => projectsContent.appendChild(row));
 }
 
-// Event listeners for search input and sort selection
+// Event listeners
 searchInput.addEventListener('input', filterProjects);
-sortSelect.addEventListener('change', filterProjects);
+sortSelect.addEventListener('change', sortProjects);
+
+// Initial call to populate the project display correctly
+filterProjects();
+sortProjects();
