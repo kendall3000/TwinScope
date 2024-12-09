@@ -215,3 +215,14 @@ width: 10%;
       margin-bottom: 2rem;
     }
 }
+
+.search-filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-filter-container input, .search-filter-container select {
+  padding: 10px;
+  margin: 5px;
+}

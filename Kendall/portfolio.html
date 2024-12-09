@@ -6,7 +6,6 @@
     <title>Kendall Ramos | Portfolio</title>
     <link rel="stylesheet" href="../assets/css/basic-styles.css"> 
     <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
-    <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
     <link rel="stylesheet" href="../Kendall/assets/css/portfolio-styles.css"> 
     <link rel="stylesheet" href="assets/css/resume-style.css">
 </head>
@@ -31,7 +30,6 @@
                         <span class="tooltip">Learn more about my journey and background</span>
                     </li>
                     <li class="navbar-item" data-description="View my resume and qualifications">
-                        <!-- <a href="assets/files/tech-resume.pdf" class="navbar-links" target="_blank">Resume</a> -->
                         <a href="resume.html" class="navbar-links">Resume</a>
                         <span class="tooltip">View my resume and qualifications</span>
                     </li>
@@ -51,57 +49,66 @@
             </div>
         </nav>
     </header>
-    <!-- portfolio in progress -->
+
+    <!-- portfolio section -->
     <div class="project-container">
         <section id="projects" class="projects sec-pad">
             <div class="main-container">
                 <!-- Title and subtitle -->
                 <h2 class="heading heading-sec heading-sec__mb-bg">
-                <span class="heading-sec__main">
-                    Projects
-                </span>
-                <span class="heading-sec__sub">
-                    Allow me to share some of the personal projects I've undertaken...
-                </span>
+                    <span class="heading-sec__main">Projects</span>
+                    <span class="heading-sec__sub">Allow me to share some of the personal projects I've undertaken...</span>
                 </h2>
+
+                <!-- Search and Filter -->
+                <div class="projects__filter">
+                    <input type="text" id="searchInput" placeholder="Search Projects by Name" class="search-input">
+                    <select id="sortSelect" class="sort-select">
+                        <option value="none">Sort By</option>
+                        <option value="dateAsc">Date Ascending</option>
+                        <option value="dateDesc">Date Descending</option>
+                        <option value="alphaAsc">Alphabetical A-Z</option>
+                        <option value="alphaDesc">Alphabetical Z-A</option>
+                    </select>
+                </div>
+
                 <!-- Project content -->
-                <div class="projects__content">
+                <div class="projects__content" id="projectsContent">
                     <!-- YourBugRep project section -->
-                    <div class="projects__row" >
-                        <div class="jump" id="YourbugRep"></div>
+                    <div class="projects__row" data-name="YourBugRep Website" data-date="2023-12-01">
                         <div class="projects__row-img-cont">
                             <img src="../Kendall/assets/images/BugRep/bugrep-image1.png" alt="YourBugRep Homepage Screenshot" class="projects__row-img" loading="lazy" />
                         </div>
                         <div class="projects__row-content">
-                            <h3 class="projects__row-content-title">
-                                YourBugRep Website
-                            </h3>
+                            <div class="jump" id="YourbugRep"></div>
+                            <h3 class="projects__row-content-title">YourBugRep Website</h3>
                             <p class="projects__row-content-desc">
-                                YourBugRep is a comprehensive travel companion tailored to help users avoid bed bug encounters while traveling. It uses Firebase and Firestore for real-time data on bed bug complaints, providing up-to-date information. The app features a responsive interface built with HTML, CSS, and JavaScript, ensuring a smooth user experience across devices. Google Cloud Functions power real-time alerts, allowing users to receive notifications about potential bed bug risks at their accommodations.
+                                YourBugRep is a comprehensive travel companion tailored to help users avoid bed bug encounters while traveling...
                             </p>
-                            <a href="bedbug.html" class="btn btn--med btn--theme dynamicBgClr" >Info / Git Repository</a>
+                            <a href="bedbug.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
                         </div>
                     </div>
-                    <!-- Sinking flag project section -->
-                    <div class="jump" id="SinkingFlag"></div>
-                    <div class="projects__row">
+
+                    <!-- Sinking Flag project section -->
+                    <div class="projects__row" data-name="Sinking Flag Game" data-date="2023-11-15">
                         <div class="projects__row-img-cont">
-                            <img src="../Kendall/assets/images/SinkingFlag/flag1.png" alt="SinkingFlag Game Homescreen Screenshot" class="projects__row-img" loading="lazy" />
+                            <img src="../Kendall/assets/images/SinkingFlag/flag1.png" alt="Sinking Flag Game Screenshot" class="projects__row-img" loading="lazy" />
                         </div>
+                        <div class="jump" id="SinkingFlag"></div>
                         <div class="projects__row-content">
-                            <h3 class="projects__row-content-title">Sinking Flag</h3>
+                            <h3 class="projects__row-content-title">Sinking Flag Game</h3>
                             <p class="projects__row-content-desc">
                                 An adventure platformer in C# and Unity, where players collect flags across diverse maps—underwater, forest, volcano, and laboratory. With mechanics like rising platforms and hydropumps, the game emphasizes exploration and movement, ensuring an engaging gameplay experience.
                             </p>
-                            <a href="sinking-flag.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
+                            <a href="sinkingflag.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
                         </div>
                     </div>
                     <!-- Rasa Chatbot project section -->
-                    <div class="jump" id="Rasa"></div>
-                    <div class="projects__row">
+                    <div class="projects__row" data-name="Rasa Chatbot" data-date="2023-12-01">
                         <div class="projects__row-img-cont">
                             <img src="../Kendall/assets/images/ChatBot/chatbot1.PNG" alt="Working Rasa Chatbot" class="projects__row-img" loading="lazy" />
                         </div>
+                        <div class="jump" id="Rasa"></div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">Rasa Chatbot</h3>
                             <p class="projects__row-content-desc">
@@ -110,26 +117,28 @@
                             <a href="rasa-chatbot.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
                         </div>
                     </div>
-                    <!-- Flappy bird project section -->
-                    <div class="jump" id="Flappy"></div>
-                    <div class="projects__row">
+
+                    <!-- Flappy Bird project section -->
+                    <div class="projects__row" data-name="Flappy Bird Game" data-date="2023-11-01">
                         <div class="projects__row-img-cont">
                             <img src="../Kendall/assets/images/FlappyBird/image1.png" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy" />
                         </div>
+                        <div class="jump" id="Flappy"></div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">Flappy Bird Game</h3>
                             <p class="projects__row-content-desc">
-                            Brief description of your project, outlining its purpose and key features.
+                                Brief description of your project, outlining its purpose and key features.
                             </p>
-                            <a href="flappy-bird.html" class="btn btn--med btn--theme dynamicBgClr" >Info / Git Repository</a>
+                            <a href="flappy-bird.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
                         </div>
                     </div>
-                    <!-- ebookfair project section -->
-                    <div class="jump" id="eBookfair"></div>
-                    <div class="projects__row">
+
+                    <!-- eBookfair project section -->
+                    <div class="projects__row" data-name="eBookfair Website" data-date="2023-10-15">
                         <div class="projects__row-img-cont">
                             <img src="../Kendall/assets/images/ebookfair/ebookfair_1.webp" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy" />
                         </div>
+                        <div class="jump" id="eBookfair"></div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">eBookfair Website</h3>
                             <p class="projects__row-content-desc">
@@ -138,46 +147,66 @@
                             <a href="eBookfair.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
                         </div>
                     </div>
+
                     <!-- Meal Prep project section -->
-                    <div class="jump" id="MealPrep"></div>
-                    <div class="projects__row">
+                    <div class="projects__row" data-name="Meal Prep App" data-date="2023-09-25">
                         <div class="projects__row-img-cont">
-                            <img src="../Kendall/assets/images/MealPrep/image1.png" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy"/>
+                            <img src="../Kendall/assets/images/MealPrep/image1.png" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy" />
                         </div>
+                        <div class="jump" id="MealPrep"></div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">Meal Prep App</h3>
                             <p class="projects__row-content-desc">
-                            A Java-based meal preparation application that helps users plan meals based on their health goals. Users can log in, calculate their BMI, and receive personalized meal plans and recipes tailored to their preferences. The app features a user-friendly interface, making it easy for individuals to manage their dietary needs and health objectives.
+                                A Java-based meal preparation application that helps users plan meals based on their health goals. Users can log in, calculate their BMI, and receive personalized meal plans and recipes tailored to their preferences. The app features a user-friendly interface, making it easy for individuals to manage their dietary needs and health objectives.
                             </p>
                             <a href="meal-prep.html" class="btn btn--med btn--theme dynamicBgClr">Info / Git Repository</a>
                         </div>
                     </div>
-                    <!-- All Assignments -->
-                    <div class="projects__row">
+
+                    <!-- Personalized Content Delivery Project -->
+                    <div class="projects__row" data-name="Personalized Content Delivery" data-date="2024-10-05">
+                        <div class="projects__row-img-cont">
+                            <img src="../Kendall/assets/images/under-construction.jpg" alt="Personalized Content Delivery Screenshot" class="projects__row-img" loading="lazy" />
+                        </div>
+                        <div class="jump" id="PersonalizedContentDelivery"></div>
+                        <div class="projects__row-content">
+                            <h3 class="projects__row-content-title">Personalized Content Delivery</h3>
+                            <p class="projects__row-content-desc">
+                                We&apos;re building a Personalized Content Delivery App that will recommend short documents or videos based on user interests. The app will help deliver content (articles, videos, or podcasts) based on user preferences, helping them grow personally by exploring topics they find engaging. It could recommend motivational videos, educational articles, or even self-improvement content tailored to the user's interests.
+                            </p>
+                            <a class="btn btn--med btn--theme dynamicBgClr" target="_blank">Under Construction</a>
+                        </div>
+                    </div>
+
+                    <!-- Coursework Repository -->
+                    <div class="projects__row" data-name="Coursework Repository" data-date="2023-08-10">
                         <div class="projects__row-img-cont">
                             <img src="../Kendall/assets/images/Coursework.png" alt="Project 2 Screenshot" class="projects__row-img" loading="lazy" />
                         </div>
+                        <div class="jump" id="Coursework"></div>
                         <div class="projects__row-content">
-                            <h3 class="projects__row-content-title">Coursework RepositoryA</h3>
+                            <h3 class="projects__row-content-title">Coursework Repository</h3>
                             <p class="projects__row-content-desc">
-                                This repository showcases my projects and assignments, reflecting my academic growth and skill development. Explore each folder to discover the challenges I've faced and the knowledge I've gained through dedicated study and application.
+                                This repository showcases my projects and assignments, reflecting my academic growth and skill development. Explore each folder to discover the challenges I&apos;ve faced and the knowledge I've gained through dedicated study and application.
                             </p>
                             <a href="https://github.com/kendall3000/Assignments" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Info / Git Repository</a>
                         </div>
                     </div>
-            
-                </div>
+
             </div>
-        </section>                  
+        </section>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Kendall Ramos. All rights reserved.</p>
-        
         <br>
         <p>Last updated 09-18-2024</p>
     </footer>
-    <!-- contact will also be at the bottom of each of out homepage  -->
+
+    <!-- Scripts -->
     <script src="../Kendall/assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/search.js"></script>
 </body>
 </html>

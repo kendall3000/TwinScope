@@ -237,20 +237,24 @@ body.about-me-background::before {
 
 /* Footer Styling */
 footer {
-    text-align: center;
-    padding: 20px 0;
+    text-align: left;
+    padding: 40px 0px 40px 18%;
     background-color: #2c3e50; /* Dark Blue Grey */
     color: #ffffff; /* White */
     margin-top: 50px;
 }
 
 footer a {
-    color: #2ecc71; /* Accent Green */
-    text-decoration: none;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.footer-center{
+    padding-top: 20px;
 }
 
 /* Responsive Adjustments */
