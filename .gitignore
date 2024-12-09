@@ -5,6 +5,8 @@ practice css/
 index.nginx-debian.html
 test.html
 to-do-list.txt
+formspree.js
+test.php
 
 # Ignore macOS system files
 .DS_Store
