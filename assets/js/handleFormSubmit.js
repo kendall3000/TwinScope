@@ -3,7 +3,6 @@ function handleFormSubmit(event) {
 
     const form = document.getElementById("contact-form");
     const successMessage = document.getElementById("success-message");
-
     const contactOption = document.getElementById("contact-option").value;
     let formAction;
 
@@ -31,8 +30,8 @@ function handleFormSubmit(event) {
             form.reset(); // Reset form after successful submission
             successMessage.style.display = 'block'; // Show success message
             setTimeout(() => {
-                successMessage.style.display = 'none'; // Hide success message after 10 seconds
-            }, 10000); // Adjust the time based on your preference
+                successMessage.style.display = 'none'; // Hide success message after 5 seconds
+            }, 5000); // Adjust the time based on your preference
         } else {
             alert("There was an issue with your submission. Please try again.");
         }
