@@ -32,28 +32,29 @@
     <main>
         <section class="contact-form-section">
             <h2>Contact Us</h2>
-            <form id="contact-form" action="send-email.php" method="POST">
+            <!-- <form id="contact-form" action="send-email.php" method="POST"> -->
+            <form id="contact-form" method="POST">
                 <label for="contact-option">Who would you like to contact?</label>
                 <select id="contact-option" name="contact-option" required>
                     <option value="Kendall">Kendall</option>
                     <option value="Kameron">Kameron</option>
                     <option value="Both">Both</option>
                 </select>
-                
+
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                
+
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                
+
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
-                
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
                 <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
-    
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/formspree.js"></script>
 </body>
 </html>
