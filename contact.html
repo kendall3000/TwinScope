@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twins Scope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kendall & Kameron</title>
     <link rel="stylesheet" href="assets/css/basic-styles.css">
     <link rel="stylesheet" href="assets/css/navbar-style.css">
-    <link rel="stylesheet" href="assets/css/main-style.css"> <!-- Add your custom styles here -->
+    <link rel="stylesheet" href="assets/css/main-style.css">
 </head>
 <body id="top_page">
-    <!-- Navbar -->
+    <!-- Navbar --> 
     <header>
         <nav class="navbar">
             <div class="navbar-container">
@@ -27,8 +27,33 @@
                 </ul>
             </div>
         </nav>
-        <h1>Contact page coming soon!</h1>
     </header>
+    
+    <main>
+        <section class="contact-form-section">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="send-email.php" method="POST">
+                <label for="contact-option">Who would you like to contact?</label>
+                <select id="contact-option" name="contact-option" required>
+                    <option value="Kendall">Kendall</option>
+                    <option value="Kameron">Kameron</option>
+                    <option value="Both">Both</option>
+                </select>
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
     <script src="assets/js/navbar.js"></script>
 </body>
 </html>
