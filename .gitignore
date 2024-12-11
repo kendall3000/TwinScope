@@ -3,7 +3,7 @@ practice css/
 
 # Ignore specific files
 index.nginx-debian.html
-test.html
+#test.html
 to-do-list.txt
 test.php
 

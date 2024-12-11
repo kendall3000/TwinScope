@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
 }
+body {
+    background: none; /* This would override any background you set for contact-page */
+}
+
 
 /* Navbar Styles */
 .navbar {
@@ -201,7 +205,7 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 50px; /* Space between navbar and form */
-    margin-bottom: 50px; /* Space between navbar and form */
+    margin-bottom: 80px; /* Space between navbar and form */
 }
 
 .contact-form-section h2 {
@@ -251,7 +255,9 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .contact-form-section {
-        padding: 20px; /* Reduce padding on smaller screens */
+        
+        padding: 20px;
+        margin: 20px;
     }
 
     .contact-form-section input, 
@@ -264,3 +270,20 @@
         font-size: 0.9rem; /* Adjust button font size */
     }
 }
+
+body.contact-page {
+    margin: 0;
+    /* overflow: hidden; */
+    background: black; 
+    
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10; /* Ensure it's behind all other content */
+}
+
+
