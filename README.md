@@ -35,7 +35,7 @@ Welcome to our website development project! Below are the instructions to get st
 
 ## Pushing Changes
 
-1. **Stage Changes**: Stage the changes you made using Git:
+1. **Stage Changes**: Stage the changes u made using Git:
 
     ```bash
     git add .

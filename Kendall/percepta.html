@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Content Delivery Project - Project Details</title>
+    <link rel="stylesheet" href="../Kendall/assets/css/kendall-style.css">
+    <link rel="stylesheet" href="../Kendall/assets/css/details-style.css">
+</head>
+<body class="project-background">
+
+<!-- Navbar -->
+<nav class="project-navbar">
+    <div class="project-navbar-content">
+        <a href="portfolio.html#Percepta" class="back-button"><img src="../Kendall/assets/files/icons/back-arrow.png" alt="Back" class="back-arrow"></a>
+        <span class="project-title">Percepta</span>
+        <a href="index.html" id="navbar-logo">Kendall Ramos</a>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="project-content">
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/Coursework.png" alt="Landing Page">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Landing Page</h5>
+                            <p class="project-description">
+                                The homepage where users can sign up and personalize their content preferences.
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/PersonalizedContent/settingPreferences.png" alt="Set Preferences">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Set Preferences</h5>
+                            <p class="project-description">
+                                Users can select their interests and preferred content types for personalized recommendations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/PersonalizedContent/emailNotification.png" alt="Email Notification">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Email Notification</h5>
+                            <p class="project-description">
+                                Users receive tailored content recommendations via email based on their preferences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Kendall/assets/images/PersonalizedContent/mobileView.png" alt="Mobile View">
+                        <div class="carousel-description description-indicator-box">
+                            <h5>Mobile View</h5>
+                            <p class="project-description">
+                                The mobile-friendly version of the platform, allowing users to access recommendations on-the-go.
+                            </p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <button class="carousel-button prev-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&lt;" class="prev-button-icon"></button>
+            <button class="carousel-button next-button"><img src="../Kendall/assets/files/icons/carousel-arrow.png" alt="&gt;" class="next-button-icon"></button>
+            <div class="indicator-container description-indicator-box">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access links Section -->
+    <section class="access-links">
+        <div class="access-buttons">
+            <a href="https://github.com/kendall3000/Percepta" target="_blank"><button class="website-button">Git Repository</button></a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="project-overview">
+        <h1 class="project-overview-title">Project Overview</h1>
+        <h2>Revolutionizing Personalized Content Delivery</h2>
+        <p>
+            Percepta is a cutting-edge platform designed to deliver personalized content to users based on their preferences, leveraging modern technologies for a seamless, data-driven experience. At the core, the backend of the system is powered by Node.js, providing a robust and scalable environment for handling real-time data processing and content delivery. The platform utilizes SQLite for efficient and lightweight database management, ensuring quick access to user profiles and content preferences. Percepta integrates advanced API management, using tools like Postman for testing and debugging endpoints, while ensuring smooth communication between the frontend and backend. For seamless user notifications and interactions, the platform leverages Twilio for SMS-based alerts and SendGrid for email delivery, both enabling real-time communication with users. The front end, developed using React.js, ensures a responsive and dynamic user interface, offering a smooth experience across different devices and screen sizes. Additionally, security protocols and data privacy measures are implemented, ensuring safe and protected data transactions.
+        </p>
+    </section>
+
+    <!-- Project Description Section -->
+    <section class="project-description project-development-process">
+        <h2>What is Percepta?</h2>
+        <p>
+            Percepta is a personalized content delivery platform that allows users to receive content tailored to their specific preferences. The platform offers:
+        </p>
+        <ul>
+            <li><strong>User Profile Customization:</strong> Allows users to specify their interests and content preferences.</li>
+            <li><strong>Content Delivery:</strong> Delivers personalized content via email, text, or directly on the website.</li>
+            <li><strong>Advanced User Segmentation:</strong> Based on user behavior and data, the system segments users to provide more targeted content.</li>
+            <li><strong>Real-Time Updates:</strong> Keeps users informed with the latest content updates that match their interests.</li>
+        </ul>
+        <p>Percepta is built to enhance user experience by offering highly relevant content that aligns with users' needs and interests, providing more value in their digital interactions.</p>
+    </section>
+    <!-- Contributors Section -->
+    <section class="project-development-process">
+        <h3>Team Contributions</h3>
+        <p>Percepta is a result of seamless collaboration among our dedicated team members, each bringing expertise in different areas:</p>
+        <ul>
+            <li><strong>Kendall (Backend Developer & Collaborator):</strong> Led the backend development of Percepta, primarily focusing on building and optimizing server-side logic with Node.js. I implemented and managed the SQLite database, ensuring efficient data storage and retrieval for personalized content. I also integrated APIs for content delivery and real-time notifications using Twilio and SendGrid. Although my primary role was backend development, I actively contributed to various aspects of the project, including assisting with frontend implementation and collaborating on security features.</li>
+            <li><strong>Drako (Frontend Developer):</strong> Led the frontend development of Percepta, creating a dynamic and user-friendly interface using React.js. Drako designed and implemented the responsive and interactive elements of the site, ensuring it was accessible on all devices. They worked closely with me to ensure seamless integration between the backend and frontend, providing a smooth and engaging user experience.</li>
+            <li><strong>Kerry (Security & Data Privacy Specialist):</strong> Took the lead on ensuring the security and privacy of user data across the platform. Kerry implemented encryption protocols and ensured compliance with industry standards for data protection. They focused on safeguarding sensitive information, performing vulnerability assessments, and helping with the integration of secure data handling practices on both the backend and frontend.</li>
+        </ul>
+    </section>
+
+    <!-- Development Process Section -->
+    <section class="project-development-process">
+        <h2>My Development Process</h2>
+        <p>Building Percepta was an exciting challenge, consisting of multiple phases:</p>
+        <ul>
+            <li><strong>Initial Research:</strong> Studied user needs and preferences, determining the types of content that would be most relevant for each user.</li>
+            <li><strong>Design:</strong> Designed user-friendly interfaces with React.js for a seamless frontend experience, keeping user engagement in mind.</li>
+            <li><strong>Backend Development:</strong> Built using Node.js and SQLite for scalable data management, ensuring quick content delivery.</li>
+            <li><strong>API Integration:</strong> Integrated APIs like Twilio and SendGrid for SMS and email content delivery, ensuring timely notifications for users.</li>
+            <li><strong>Testing:</strong> Rigorous testing of the user interface and content delivery system to ensure smooth functionality across all devices.</li>
+        </ul>
+    </section>
+
+    <!-- Technologies Used Section -->
+    <section class="project-technologies">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Node.js</li>
+            <li>SQLite</li>
+            <li>HTML, CSS, React.js</li>
+            <li>Twilio (for SMS content delivery)</li>
+            <li>SendGrid (for email content delivery)</li>
+            <li>Postman (for API testing)</li>
+            <!-- <li><strong>Backend:</strong> Node.js for a robust and scalable server-side environment that handles real-time data processing and dynamic content delivery.</li>
+            <li><strong>Database:</strong> SQLite for a lightweight and efficient database solution, ensuring fast and reliable access to user profiles and content preferences.</li>
+            <li><strong>Frontend:</strong> React.js to build an interactive, responsive, and dynamic user interface that adapts to various devices and screen sizes. Html and Css for layout and styling.</li>
+            <li><strong>APIs:</strong> Postman was used to test and debug RESTful APIs, ensuring smooth communication between the backend and frontend.</li>
+            <li><strong>Notifications:</strong> Twilio for SMS-based alerts and SendGrid for email notifications, allowing real-time communication with users.</li>
+            <li><strong>Security & Privacy:</strong> Kerry and I&apos;s expertise in data privacy ensured that all personal information was securely handled, while encryption protocols were integrated into the backend to safeguard sensitive data.</li> -->
+        </ul>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="project-additional-info">
+        <h2>Additional Information</h2>
+        
+        <!-- Key Information Summary -->
+        <div class="additional-info-section">
+            <h3>Key Information Summary</h3>
+            <p>
+                Percepta is an ongoing project, with future plans to integrate more content delivery channels and enhance user engagement through AI-based content recommendations. The platform is designed to be scalable and easily customizable for different types of content delivery needs.
+            </p>
+        </div>
+        
+        <!-- Frequently Asked Questions -->
+        <div class="additional-info-section">
+            <h3>Frequently Asked Questions</h3>
+            <dl>
+                <dt><strong>What kind of content can I personalize?</strong></dt>
+                <dd>Users can personalize various types of content, such as articles, videos, product recommendations, and more.</dd>
+                
+                <dt><strong>How do I receive the personalized content?</strong></dt>
+                <dd>You will receive content recommendations through email or SMS, based on your selected preferences.</dd>
+                
+                <dt><strong>How do I update my preferences?</strong></dt>
+                <dd>You can update your preferences at any time via the platform&apos;s interface, and the system will adjust the content accordingly.</dd>
+            </dl>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Kendall Ramos. All rights reserved.</p>
+    <br>
+    <p><a href="../contact.html">Contact Me</a></p> 
+</footer>
+<script src="../Kendall/assets/js/project-details.js"></script>
+
+</body>
+</html>
